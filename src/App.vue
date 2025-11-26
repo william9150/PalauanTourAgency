@@ -15,6 +15,7 @@ const route = useRoute()
 const { t } = useI18n()
 
 const siteTitle = computed(() => {
+  if (route.path === '/') return 'Palauan Tour'
   const pageTitle = route.meta.title ? t(`common.${route.meta.title}`) : ''
   return pageTitle ? `${pageTitle} | Palauan Tour` : 'Palauan Tour'
 })
