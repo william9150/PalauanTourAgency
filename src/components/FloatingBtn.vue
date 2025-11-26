@@ -36,6 +36,11 @@ import { ChatDotRound } from '@element-plus/icons-vue'
 .fab {
   width: 60px;
   height: 60px;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 .social-actions {
