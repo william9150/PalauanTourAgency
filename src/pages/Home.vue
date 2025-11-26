@@ -52,7 +52,7 @@
 <style scoped>
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1540206395-688085723adb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/hero-bg.png') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
