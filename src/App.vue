@@ -6,6 +6,22 @@
 
 <script setup lang="ts">
 import DefaultLayout from './layouts/DefaultLayout.vue'
+import { useHead } from '@vueuse/head'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+const siteTitle = computed(() => {
+  const pageTitle = route.meta.title ? t(`common.${route.meta.title}`) : ''
+  return pageTitle ? `${pageTitle} | Palauan Tour` : 'Palauan Tour'
+})
+
+useHead({
+  title: siteTitle,
+})
 </script>
 
 <style>

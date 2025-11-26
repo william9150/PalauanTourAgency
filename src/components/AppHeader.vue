@@ -7,7 +7,7 @@
         </router-link>
       </div>
       <div class="nav-wrapper">
-        <el-menu mode="horizontal" :router="true" :ellipsis="false" class="nav-menu">
+        <el-menu mode="horizontal" :router="true" :default-active="$route.path" :ellipsis="false" class="nav-menu">
           <el-menu-item index="/">{{ $t('common.home') }}</el-menu-item>
           <el-sub-menu index="/about">
             <template #title>{{ $t('common.about') }}</template>
