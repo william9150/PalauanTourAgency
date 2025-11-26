@@ -1,5 +1,27 @@
 {
   "common": {
-    "title": "Palauan Tour"
+    "title": "Palauan Tour",
+    "home": "首頁",
+    "about": "認識帛琉",
+    "tours": "冒險模式",
+    "guide": "行前攻略",
+    "rental": "裝備租借",
+    "booking": "立即報名",
+    "copyright": "© {year} Palauan Tour. All rights reserved.",
+    "line_consult": "Line 諮詢",
+    "instagram": "Instagram"
+  },
+  "home": {
+    "hero_title": "主線任務｜永續旅行 × 海島探索",
+    "hero_subtitle": "探索帛琉的奇幻與美麗",
+    "start_adventure": "開始冒險",
+    "trust_bar_title": "玩家推薦",
+    "services_title": "冒險模式",
+    "group_tour": "團體旅遊",
+    "group_tour_desc": "適合喜歡熱鬧的探險家，結交新朋友，共享歡樂時光。",
+    "honeymoon": "蜜月旅行",
+    "honeymoon_desc": "專屬兩人的浪漫時光，享受私密與奢華的海島體驗。",
+    "private_boat": "私人包船",
+    "private_boat_desc": "自由自在的海上移動城堡，客製化行程，隨心所欲。"
   }
 }

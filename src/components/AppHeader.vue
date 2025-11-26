@@ -8,17 +8,40 @@
       </div>
       <div class="nav-wrapper">
         <el-menu mode="horizontal" :router="true" :ellipsis="false" class="nav-menu">
-          <el-menu-item index="/">首頁</el-menu-item>
-          <el-menu-item index="/about">認識帛琉</el-menu-item>
-          <el-menu-item index="/tours">冒險模式</el-menu-item>
-          <el-menu-item index="/guide">行前攻略</el-menu-item>
-          <el-menu-item index="/rental">裝備租借</el-menu-item>
-          <el-menu-item index="/booking">立即報名</el-menu-item>
+          <el-menu-item index="/">{{ $t('common.home') }}</el-menu-item>
+          <el-menu-item index="/about">{{ $t('common.about') }}</el-menu-item>
+          <el-menu-item index="/tours">{{ $t('common.tours') }}</el-menu-item>
+          <el-menu-item index="/guide">{{ $t('common.guide') }}</el-menu-item>
+          <el-menu-item index="/rental">{{ $t('common.rental') }}</el-menu-item>
+          <el-menu-item index="/booking">{{ $t('common.booking') }}</el-menu-item>
+          <div class="lang-switch">
+             <el-dropdown @command="handleLangCommand">
+              <span class="el-dropdown-link">
+                <el-icon><img src="https://flagcdn.com/w20/tw.png" v-if="$i18n.locale === 'zh-TW'" /><img src="https://flagcdn.com/w20/us.png" v-else /></el-icon>
+              </span>
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <el-dropdown-item command="zh-TW">繁體中文</el-dropdown-item>
+                  <el-dropdown-item command="en-US">English</el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
+            </el-dropdown>
+          </div>
         </el-menu>
       </div>
     </div>
   </el-header>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+const handleLangCommand = (command: string) => {
+  locale.value = command
+}
+</script>
 
 <style scoped>
 .app-header {
@@ -48,5 +71,17 @@
 }
 .nav-menu {
   border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+.lang-switch {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.el-dropdown-link {
+  display: flex;
+  align-items: center;
 }
 </style>

@@ -7,6 +7,7 @@
 
     <div class="tables-container">
       <h2>1. 浮潛 & 自潛裝備 (Snorkeling & Free Diving)</h2>
+      <!-- @vue-ignore -->
       <el-table :data="snorkelingData" style="width: 100%" stripe border>
         <el-table-column prop="item" label="項目" />
         <el-table-column prop="price" label="租金 (每天)" width="150" />
@@ -14,6 +15,7 @@
       </el-table>
 
       <h2 style="margin-top: 50px;">2. 水肺潛水裝備 (Scuba Diving)</h2>
+      <!-- @vue-ignore -->
       <el-table :data="scubaData" style="width: 100%" stripe border>
         <el-table-column prop="item" label="項目" />
         <el-table-column prop="price" label="租金 (每天)" width="150" />
@@ -24,7 +26,13 @@
 </template>
 
 <script setup lang="ts">
-const snorkelingData = [
+interface RentalItem {
+  item: string
+  price: string
+  compensation: string
+}
+
+const snorkelingData: RentalItem[] = [
   { item: '面鏡 + 呼吸管', price: '$6', compensation: '$ 30' },
   { item: '自潛長蛙', price: '$10', compensation: '$ 100' },
   { item: '防寒衣', price: '$10', compensation: '$ 100' },
@@ -39,7 +47,7 @@ const snorkelingData = [
   { item: '流勾', price: '$5', compensation: '$ 20' },
 ]
 
-const scubaData = [
+const scubaData: RentalItem[] = [
   { item: 'BCD (浮力補償裝置)', price: '$15', compensation: '$ 500' },
   { item: '轉接頭 DIN', price: '$8', compensation: '$ 80' },
   { item: '二極頭 (調節器)', price: '$15', compensation: '$ 750' },

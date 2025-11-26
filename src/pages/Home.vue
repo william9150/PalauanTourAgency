@@ -3,16 +3,16 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>主線任務｜永續旅行 × 海島探索</h1>
-        <p>探索帛琉的奇幻與美麗</p>
-        <el-button type="primary" size="large" @click="$router.push('/booking')">開始冒險</el-button>
+        <h1>{{ $t('home.hero_title') }}</h1>
+        <p>{{ $t('home.hero_subtitle') }}</p>
+        <el-button type="primary" size="large" @click="$router.push('/booking')">{{ $t('home.start_adventure') }}</el-button>
       </div>
     </section>
 
     <!-- Trust Bar -->
     <section class="trust-bar">
       <div class="container">
-        <h2>玩家推薦</h2>
+        <h2>{{ $t('home.trust_bar_title') }}</h2>
         <div class="logos">
           <div class="logo-item">世界等一等</div>
           <div class="logo-item">下課花路米</div>
@@ -23,25 +23,25 @@
     <!-- Service Cards -->
     <section class="services">
       <div class="container">
-        <h2>冒險模式</h2>
+        <h2>{{ $t('home.services_title') }}</h2>
         <div class="cards">
           <el-card class="service-card" shadow="hover" @click="$router.push('/tours')">
             <template #header>
-              <h3>團體旅遊</h3>
+              <h3>{{ $t('home.group_tour') }}</h3>
             </template>
-            <p>適合喜歡熱鬧的探險家，結交新朋友，共享歡樂時光。</p>
+            <p>{{ $t('home.group_tour_desc') }}</p>
           </el-card>
           <el-card class="service-card" shadow="hover" @click="$router.push('/tours')">
             <template #header>
-              <h3>蜜月旅行</h3>
+              <h3>{{ $t('home.honeymoon') }}</h3>
             </template>
-            <p>專屬兩人的浪漫時光，享受私密與奢華的海島體驗。</p>
+            <p>{{ $t('home.honeymoon_desc') }}</p>
           </el-card>
           <el-card class="service-card" shadow="hover" @click="$router.push('/tours')">
             <template #header>
-              <h3>私人包船</h3>
+              <h3>{{ $t('home.private_boat') }}</h3>
             </template>
-            <p>自由自在的海上移動城堡，客製化行程，隨心所欲。</p>
+            <p>{{ $t('home.private_boat_desc') }}</p>
           </el-card>
         </div>
       </div>
