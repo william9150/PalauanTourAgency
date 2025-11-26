@@ -1,0 +1,23 @@
+:root {
+  /* Element Plus Overrides */
+  --el-color-primary: #0077BE;
+  --el-color-success: #40b682;
+  --el-color-warning: #FF9F43;
+  --el-color-danger: #f56c6c;
+  --el-color-error: #f56c6c;
+  --el-color-info: #909399;
+
+  /* Custom Palette */
+  --color-primary: #0077BE;
+  --color-secondary: #56bfc2;
+  --color-accent: #fcd85d;
+  --color-success: #40b682;
+  --color-warning: #FF9F43;
+  --color-background: #F5F5F5;
+}
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+  color: #333;
+}
