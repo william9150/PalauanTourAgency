@@ -34,8 +34,9 @@ import { ChatDotRound } from '@element-plus/icons-vue'
   z-index: 1000;
 }
 .fab {
-  width: 60px;
-  height: 60px;
+  min-width:50px;
+  width: 50px;
+  height: 50px;
   border-radius: 50% !important;
   padding: 0 !important;
   display: flex;
