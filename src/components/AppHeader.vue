@@ -2,7 +2,9 @@
   <el-header class="app-header">
     <div class="container">
       <div class="logo">
-        <router-link to="/">Palauan Tour</router-link>
+        <router-link to="/">
+          <img src="../assets/logo.jpg" alt="Palauan Tour" class="logo-img" />
+        </router-link>
       </div>
       <div class="nav-wrapper">
         <el-menu mode="horizontal" :router="true" :ellipsis="false" class="nav-menu">
@@ -37,10 +39,12 @@
   padding: 0 20px;
 }
 .logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--el-color-primary);
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 50px;
+  width: auto;
 }
 .nav-menu {
   border-bottom: none;
