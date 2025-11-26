@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <div class="header-section">
-      <h1>帛琉旅行探險手冊</h1>
+      <h1>{{ $t('common.guide') }}</h1>
       <p>歡迎來到彩虹的故鄉！在開始探險之前，請先閱讀這份常見問題指南。</p>
     </div>
 
@@ -10,31 +10,8 @@
     </div>
 
     <el-tabs type="border-card" class="guide-tabs">
-      <el-tab-pane label="玩家宣示">
-        <div class="pledge-section">
-          <h2>🌟 第一章：玩家宣示 (The Pledge)</h2>
-          <blockquote class="pledge-text">
-            我懷著感恩的心，珍惜帛琉的海洋與土地。<br>
-            我不傷害生物，也不拿取不屬於我的東西。<br>
-            我善待島上居民，以尊重與敬仰守護文化。<br>
-            我不留下垃圾與汙染，只留下笑容與回憶恩典。
-          </blockquote>
-        </div>
-      </el-tab-pane>
-
-      <el-tab-pane label="認識帛琉">
-        <h2>🌏 第二章：認識帛琉 (About Palau)</h2>
-        <ul class="info-list">
-          <li><strong>地理與人口</strong>：面積 484km²（約 1.8 個台北），島民約 16,000 人。</li>
-          <li><strong>語言溝通</strong>：官方語言是英文，簡單溝通大家都會懂。</li>
-          <li><strong>飛行時間</strong>：直飛約 4 小時。</li>
-          <li><strong>時差</strong>：比台灣快 1 個小時。</li>
-          <li><strong>氣候</strong>：海島型氣候，年均溫 28~32°C。容易看見彩虹，故有「彩虹故鄉」之稱。</li>
-        </ul>
-      </el-tab-pane>
-
       <el-tab-pane label="行前準備">
-        <h2>✈️ 第三章：行前準備與簽證</h2>
+        <h2>✈️ 行前準備與簽證</h2>
         
         <h3>1. 簽證資訊</h3>
         <p>持有效期限 6 個月以上之中華民國護照正本，享 <strong>90 天免簽證</strong>待遇。</p>
@@ -55,7 +32,7 @@
       </el-tab-pane>
 
       <el-tab-pane label="入境須知">
-        <h2>🛃 第四章：入境須知</h2>
+        <h2>🛃 入境須知</h2>
         
         <h3>1. 入境表格填寫</h3>
         <p>出發前 72 小時內需線上填寫「報關單」及「入境卡」。</p>
@@ -70,7 +47,7 @@
       </el-tab-pane>
 
       <el-tab-pane label="當地生活">
-        <h2>💰 第五章：當地生活實用資訊</h2>
+        <h2>💰 當地生活實用資訊</h2>
         
         <h3>消費與現金</h3>
         <p>建議攜帶現金 US$300~500。賣場可刷卡，但多數店家只接受現金。</p>
@@ -88,6 +65,27 @@
           <li>導遊：每天 US$10</li>
         </ul>
       </el-tab-pane>
+
+      <el-tab-pane label="裝備租借">
+        <h2>🤿 裝備租借價目表</h2>
+        <p style="margin-bottom: 20px;">帶上自己習慣的裝備，剩下的交給 PALAUAN TOUR！</p>
+
+        <h3>1. 浮潛 & 自潛裝備 (Snorkeling & Free Diving)</h3>
+        <!-- @vue-ignore -->
+        <el-table :data="snorkelingData" style="width: 100%" stripe border>
+          <el-table-column prop="item" label="項目" />
+          <el-table-column prop="price" label="租金 (每天)" width="150" />
+          <el-table-column prop="compensation" label="遺失/損毀賠償" width="180" />
+        </el-table>
+
+        <h3 style="margin-top: 40px;">2. 水肺潛水裝備 (Scuba Diving)</h3>
+        <!-- @vue-ignore -->
+        <el-table :data="scubaData" style="width: 100%" stripe border>
+          <el-table-column prop="item" label="項目" />
+          <el-table-column prop="price" label="租金 (每天)" width="150" />
+          <el-table-column prop="compensation" label="遺失/損毀賠償" width="180" />
+        </el-table>
+      </el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -96,6 +94,42 @@
 import { ref } from 'vue'
 
 const packingList = ref([])
+
+interface RentalItem {
+  item: string
+  price: string
+  compensation: string
+}
+
+const snorkelingData: RentalItem[] = [
+  { item: '面鏡 + 呼吸管', price: '$6', compensation: '$ 30' },
+  { item: '自潛長蛙', price: '$10', compensation: '$ 100' },
+  { item: '防寒衣', price: '$10', compensation: '$ 100' },
+  { item: '浮潛救生衣', price: '$15', compensation: '$ 350' },
+  { item: '防寒外套', price: '$10', compensation: '$ 180' },
+  { item: '自潛配重帶', price: '$5', compensation: '$ 40' },
+  { item: '1kg 鉛塊 (1pcs)', price: '$2', compensation: '$ 10' },
+  { item: '電腦錶', price: '$15', compensation: '$ 350' },
+  { item: '指北針', price: '$6', compensation: '$ 100' },
+  { item: '潛水手電筒', price: '$5', compensation: '$ 200' },
+  { item: '自潛浮球', price: '$20', compensation: '$ 150 (底鉛&繩子另計)' },
+  { item: '流勾', price: '$5', compensation: '$ 20' },
+]
+
+const scubaData: RentalItem[] = [
+  { item: 'BCD (浮力補償裝置)', price: '$15', compensation: '$ 500' },
+  { item: '轉接頭 DIN', price: '$8', compensation: '$ 80' },
+  { item: '二極頭 (調節器)', price: '$15', compensation: '$ 750' },
+  { item: '防寒衣', price: '$10', compensation: '$ 100' },
+  { item: '防寒外套', price: '$10', compensation: '$ 180' },
+  { item: '電腦錶', price: '$15', compensation: '$ 350' },
+  { item: '潛水手電筒', price: '$5', compensation: '$ 200' },
+  { item: '指北針', price: '$6', compensation: '$ 100' },
+  { item: '蛙鞋', price: '$6', compensation: '$ 80' },
+  { item: '1kg 鉛塊 (1pcs)', price: '$2', compensation: '$ 10' },
+  { item: '浮力棒 & SMB', price: '$15', compensation: '$ 50' },
+  { item: '流勾', price: '$5', compensation: '$ 20' },
+]
 </script>
 
 <style scoped>
@@ -113,18 +147,6 @@ const packingList = ref([])
   border-radius: 8px;
   margin-bottom: 40px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.pledge-section {
-  text-align: center;
-  padding: 40px;
-  background: #f0f9eb;
-  border-radius: 8px;
-}
-.pledge-text {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: var(--el-color-success);
-  line-height: 2;
 }
 .info-list {
   list-style: none;
@@ -150,5 +172,6 @@ h2 {
 h3 {
   color: var(--el-color-secondary);
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 </style>

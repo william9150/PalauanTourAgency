@@ -9,10 +9,13 @@
       <div class="nav-wrapper">
         <el-menu mode="horizontal" :router="true" :ellipsis="false" class="nav-menu">
           <el-menu-item index="/">{{ $t('common.home') }}</el-menu-item>
-          <el-menu-item index="/about">{{ $t('common.about') }}</el-menu-item>
+          <el-sub-menu index="/about">
+            <template #title>{{ $t('common.about') }}</template>
+            <el-menu-item index="/about-us">{{ $t('common.about_us') }}</el-menu-item>
+            <el-menu-item index="/about-palau">{{ $t('common.about_palau') }}</el-menu-item>
+          </el-sub-menu>
           <el-menu-item index="/tours">{{ $t('common.tours') }}</el-menu-item>
           <el-menu-item index="/guide">{{ $t('common.guide') }}</el-menu-item>
-          <el-menu-item index="/rental">{{ $t('common.rental') }}</el-menu-item>
           <el-menu-item index="/booking">{{ $t('common.booking') }}</el-menu-item>
           <div class="lang-switch">
              <el-dropdown @command="handleLangCommand">
