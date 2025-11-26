@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="copyright">
-          &copy; {{ new Date().getFullYear() }} Palauan Tour. All rights reserved.
+          {{ $t('common.copyright', { year: new Date().getFullYear() }) }}
         </div>
         <div class="social-links">
           <!-- Social icons will go here -->

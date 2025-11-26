@@ -12,10 +12,10 @@
       </template>
       <div class="social-actions">
         <a href="https://line.me/ti/p/YS6uwsGt3P" target="_blank" class="social-link line">
-          Line 諮詢
+          {{ $t('common.line_consult') }}
         </a>
         <a href="https://www.instagram.com/palauan_tour.co/" target="_blank" class="social-link ig">
-          Instagram
+          {{ $t('common.instagram') }}
         </a>
       </div>
     </el-popover>

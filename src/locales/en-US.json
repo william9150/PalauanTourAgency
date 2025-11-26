@@ -1,0 +1,27 @@
+{
+    "common": {
+        "title": "Palauan Tour",
+        "home": "Home",
+        "about": "About Palau",
+        "tours": "Adventure Modes",
+        "guide": "Preparation Guide",
+        "rental": "Equipment Rental",
+        "booking": "Book Now",
+        "copyright": "© {year} Palauan Tour. All rights reserved.",
+        "line_consult": "Line Consultation",
+        "instagram": "Instagram"
+    },
+    "home": {
+        "hero_title": "Main Quest | Sustainable Travel × Island Exploration",
+        "hero_subtitle": "Explore the fantasy and beauty of Palau",
+        "start_adventure": "Start Adventure",
+        "trust_bar_title": "Player Recommendations",
+        "services_title": "Adventure Modes",
+        "group_tour": "Group Tour",
+        "group_tour_desc": "For explorers who love excitement, making new friends, and sharing happy moments.",
+        "honeymoon": "Honeymoon",
+        "honeymoon_desc": "Romantic time exclusively for two, enjoying private and luxurious island experiences.",
+        "private_boat": "Private Boat",
+        "private_boat_desc": "A free-moving castle on the sea, customized itinerary, as you wish."
+    }
+}
