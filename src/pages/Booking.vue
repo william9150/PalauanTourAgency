@@ -107,10 +107,22 @@
     
     <div class="cta-section">
       <h3>GAME START！祝您有一趟難忘的帛琉冒險之旅！</h3>
-      <el-button type="primary" size="large" @click="$router.push('/contact')">立即開啟對話</el-button>
+      <div class="contact-buttons">
+        <el-button type="success" size="large" @click="openLink('https://line.me/ti/p/YS6uwsGt3P')">
+          LINE 諮詢
+        </el-button>
+        <el-button type="warning" color="#E1306C" size="large" @click="openLink('https://www.instagram.com/palauan_tour.co/')">
+          Instagram
+        </el-button>
+      </div>
     </div>
   </div>
 </template>
+<script setup lang="ts">
+const openLink = (url: string) => {
+  window.open(url, '_blank')
+}
+</script>
 
 <style scoped>
 .page-container {
@@ -164,5 +176,10 @@
 .cta-section h3 {
   margin-bottom: 20px;
   color: var(--el-color-success);
+}
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 </style>
