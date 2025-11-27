@@ -41,11 +41,18 @@
 import { useRoute } from 'vue-router'
 import { useTours } from '../composables/useTours'
 import { computed } from 'vue'
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
 
 const route = useRoute()
 const { getTourById } = useTours()
+const { t } = useI18n()
 
 const tour = computed(() => getTourById(route.params.id as string))
+
+useHead({
+  title: computed(() => tour.value ? `${t(tour.value.titleKey)} | Palauan Tour` : 'Palauan Tour')
+})
 </script>
 
 <style scoped>

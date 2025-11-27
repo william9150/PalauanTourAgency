@@ -10,6 +10,28 @@
     "booking": "立即報名",
     "copyright": "© {year} Palauan Tour. All rights reserved.",
     "line_consult": "Line 諮詢",
+    "instagram": "Instagram"
+  },
+  "home": {
+    "hero_title": "主線任務｜永續旅行 × 海島探索",
+    "hero_subtitle": "探索帛琉的奇幻與美麗",
+    "start_adventure": "開始冒險",
+    "trust_bar_title": "玩家推薦",
+    "services_title": "冒險模式",
+    "group_tour": "團體旅遊",
+    "group_tour_desc": "適合喜歡熱鬧的探險家，結交新朋友，共享歡樂時光。",
+    "honeymoon": "蜜月旅行",
+    "honeymoon_desc": "專屬兩人的浪漫時光，享受私密與奢華的海島體驗。",
+    "private_boat": "私人包船",
+    "private_boat_desc": "自由自在的海上移動城堡，客製化行程，隨心所欲。"
+  },
+  "tours": {
+    "combos_title": "住宿 & 旅遊套裝",
+    "combos_desc": "一站式服務，包含精選住宿與經典行程，讓您輕鬆享受假期，無須煩惱瑣事。",
+    "combos_full_desc": "我們為您精心挑選了帛琉最舒適的住宿，搭配最經典的旅遊行程。無論是出海浮潛、探訪水母湖，還是享受無人島午餐，我們都為您安排妥當。機場接送、專屬導遊，讓您的旅程無後顧之憂。",
+    "day_tours_title": "一日精選",
+    "day_tours_desc": "精選帛琉最熱門的景點，大斷層、水母湖、牛奶湖，一天之內盡收眼底。",
+    "day_tours_full_desc": "時間有限？沒關係！我們的一日精選行程帶您走訪帛琉必去景點。在大斷層欣賞壯觀的珊瑚礁，在水母湖與無毒水母共舞，在牛奶湖享受天然火山泥SPA。行程緊湊而豐富，絕無冷場。",
     "sup_title": "SUP 立槳遠征",
     "sup_desc": "划著 SUP 穿梭在洛克群島的秘境之中，享受寧靜與壯麗的自然風光。",
     "sup_full_desc": "遠離喧囂，划著 SUP 深入洛克群島的紅樹林與潟湖。在平靜的水面上滑行，聆聽蟲鳴鳥叫，感受大自然的呼吸。專業教練指導，即使是初學者也能輕鬆上手。",

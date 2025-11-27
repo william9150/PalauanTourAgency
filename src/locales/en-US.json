@@ -10,6 +10,27 @@
         "booking": "Book Now",
         "copyright": "© {year} Palauan Tour. All rights reserved.",
         "line_consult": "Line Consultation",
+        "instagram": "Instagram"
+    },
+    "home": {
+        "hero_title": "Main Quest | Sustainable Travel × Island Exploration",
+        "hero_subtitle": "Explore the fantasy and beauty of Palau",
+        "start_adventure": "Start Adventure",
+        "trust_bar_title": "Player Recommendations",
+        "services_title": "Adventure Modes",
+        "group_tour": "Group Tour",
+        "group_tour_desc": "For explorers who love excitement, making new friends, and sharing happy moments.",
+        "honeymoon": "Honeymoon",
+        "honeymoon_desc": "Romantic time exclusively for two, enjoying private and luxurious island experiences.",
+        "private_boat": "Private Boat",
+        "private_boat_desc": "A free-moving castle on the sea, customized itinerary, as you wish."
+    },
+    "tours": {
+        "combos_title": "Accommodation & Tour Combos",
+        "combos_desc": "One-stop service including selected accommodation and classic tours, letting you enjoy your vacation without worries.",
+        "combos_full_desc": "We have carefully selected the most comfortable accommodation in Palau for you, paired with the most classic tour itineraries. Whether it's snorkeling, visiting Jellyfish Lake, or enjoying a lunch on an uninhabited island, we have arranged everything for you. Airport transfer and exclusive guides ensure a worry-free journey.",
+        "day_tours_title": "Day Tours",
+        "day_tours_desc": "Selected most popular attractions in Palau, Big Drop Off, Jellyfish Lake, Milky Way, all in one day.",
         "day_tours_full_desc": "Limited time? No problem! Our day tour takes you to the must-visit attractions in Palau. Admire the spectacular coral reefs at the Big Drop Off, dance with non-toxic jellyfish at Jellyfish Lake, and enjoy a natural volcanic mud SPA at the Milky Way. The itinerary is compact and rich.",
         "sup_title": "SUP Expedition",
         "sup_desc": "Paddle SUP through the hidden gems of the Rock Islands, enjoying the tranquility and magnificent natural scenery.",
