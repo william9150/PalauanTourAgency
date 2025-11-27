@@ -96,7 +96,7 @@
             <div class="step-content">
               <h4>任務目標：抵達戰場</h4>
               <p>抵達帛琉確認行程無誤後，請直接以<strong>美金現金</strong>支付尾款。</p>
-              <el-alert title="團體特別規則" type="error" :closable="false" show-icon>
+              <el-alert title="團體特別規則" type="success" :closable="false" show-icon>
                 若團體超過 15 人(含) 以上，尾款可以接受直接以「台幣匯款」方式支付。
               </el-alert>
             </div>
