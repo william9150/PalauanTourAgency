@@ -6,46 +6,13 @@
     </div>
 
     <div class="tours-grid">
-      <el-card class="tour-card" :body-style="{ padding: '0px' }">
-        <img src="../assets/tours-combo.png" class="image" />
+      <el-card v-for="tour in tours" :key="tour.id" class="tour-card" :body-style="{ padding: '0px' }">
+        <img :src="tour.image" class="image" />
         <div style="padding: 14px">
-          <h3>住宿 & 旅遊套裝 (Combos)</h3>
-          <p>一站式服務，包含精選住宿與經典行程，讓您輕鬆享受假期，無須煩惱瑣事。</p>
+          <h3>{{ $t(tour.titleKey) }}</h3>
+          <p>{{ $t(tour.descKey) }}</p>
           <div class="bottom">
-            <el-button type="primary" text @click="$router.push('/booking')">了解更多</el-button>
-          </div>
-        </div>
-      </el-card>
-
-      <el-card class="tour-card" :body-style="{ padding: '0px' }">
-        <img src="../assets/tours-day.png" class="image" />
-        <div style="padding: 14px">
-          <h3>一日精選 (Day Tours)</h3>
-          <p>精選帛琉最熱門的景點，大斷層、水母湖、牛奶湖，一天之內盡收眼底。</p>
-          <div class="bottom">
-            <el-button type="primary" text @click="$router.push('/booking')">了解更多</el-button>
-          </div>
-        </div>
-      </el-card>
-
-      <el-card class="tour-card" :body-style="{ padding: '0px' }">
-        <img src="../assets/tours-sup.png" class="image" />
-        <div style="padding: 14px">
-          <h3>SUP 立槳遠征 (Stand Up Paddleboard)</h3>
-          <p>划著 SUP 穿梭在洛克群島的秘境之中，享受寧靜與壯麗的自然風光。</p>
-          <div class="bottom">
-            <el-button type="primary" text @click="$router.push('/booking')">了解更多</el-button>
-          </div>
-        </div>
-      </el-card>
-
-      <el-card class="tour-card" :body-style="{ padding: '0px' }">
-        <img src="../assets/tours-photo.png" class="image" />
-        <div style="padding: 14px">
-          <h3>數位影像創作 (Digital Content Creations)</h3>
-          <p>專業攝影師隨行，為您記錄下每一個精彩瞬間，留下最美的回憶。</p>
-          <div class="bottom">
-            <el-button type="primary" text @click="$router.push('/booking')">了解更多</el-button>
+            <el-button type="primary" text @click="$router.push(`/tours/${tour.id}`)">了解更多</el-button>
           </div>
         </div>
       </el-card>
@@ -91,6 +58,9 @@
 
 <script setup lang="ts">
 import { Trophy, Ship, House, User, Guide, Camera } from '@element-plus/icons-vue'
+import { useTours } from '../composables/useTours'
+
+const { tours } = useTours()
 </script>
 
 <style scoped>

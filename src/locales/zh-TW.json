@@ -10,19 +10,11 @@
     "booking": "立即報名",
     "copyright": "© {year} Palauan Tour. All rights reserved.",
     "line_consult": "Line 諮詢",
-    "instagram": "Instagram"
-  },
-  "home": {
-    "hero_title": "主線任務｜永續旅行 × 海島探索",
-    "hero_subtitle": "探索帛琉的奇幻與美麗",
-    "start_adventure": "開始冒險",
-    "trust_bar_title": "玩家推薦",
-    "services_title": "冒險模式",
-    "group_tour": "團體旅遊",
-    "group_tour_desc": "適合喜歡熱鬧的探險家，結交新朋友，共享歡樂時光。",
-    "honeymoon": "蜜月旅行",
-    "honeymoon_desc": "專屬兩人的浪漫時光，享受私密與奢華的海島體驗。",
-    "private_boat": "私人包船",
-    "private_boat_desc": "自由自在的海上移動城堡，客製化行程，隨心所欲。"
+    "sup_title": "SUP 立槳遠征",
+    "sup_desc": "划著 SUP 穿梭在洛克群島的秘境之中，享受寧靜與壯麗的自然風光。",
+    "sup_full_desc": "遠離喧囂，划著 SUP 深入洛克群島的紅樹林與潟湖。在平靜的水面上滑行，聆聽蟲鳴鳥叫，感受大自然的呼吸。專業教練指導，即使是初學者也能輕鬆上手。",
+    "photo_title": "數位影像創作",
+    "photo_desc": "專業攝影師隨行，為您記錄下每一個精彩瞬間，留下最美的回憶。",
+    "photo_full_desc": "難得來到帛琉，怎能不留下美美的照片？我們的專業攝影團隊將隨行拍攝，無論是水下英姿還是陸上美照，都為您完美捕捉。提供空拍機視角，讓您的回憶更加立體震撼。"
   }
 }

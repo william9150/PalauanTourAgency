@@ -10,19 +10,12 @@
         "booking": "Book Now",
         "copyright": "© {year} Palauan Tour. All rights reserved.",
         "line_consult": "Line Consultation",
-        "instagram": "Instagram"
-    },
-    "home": {
-        "hero_title": "Main Quest | Sustainable Travel × Island Exploration",
-        "hero_subtitle": "Explore the fantasy and beauty of Palau",
-        "start_adventure": "Start Adventure",
-        "trust_bar_title": "Player Recommendations",
-        "services_title": "Adventure Modes",
-        "group_tour": "Group Tour",
-        "group_tour_desc": "For explorers who love excitement, making new friends, and sharing happy moments.",
-        "honeymoon": "Honeymoon",
-        "honeymoon_desc": "Romantic time exclusively for two, enjoying private and luxurious island experiences.",
-        "private_boat": "Private Boat",
-        "private_boat_desc": "A free-moving castle on the sea, customized itinerary, as you wish."
+        "day_tours_full_desc": "Limited time? No problem! Our day tour takes you to the must-visit attractions in Palau. Admire the spectacular coral reefs at the Big Drop Off, dance with non-toxic jellyfish at Jellyfish Lake, and enjoy a natural volcanic mud SPA at the Milky Way. The itinerary is compact and rich.",
+        "sup_title": "SUP Expedition",
+        "sup_desc": "Paddle SUP through the hidden gems of the Rock Islands, enjoying the tranquility and magnificent natural scenery.",
+        "sup_full_desc": "Stay away from the hustle and bustle, paddle SUP deep into the mangroves and lagoons of the Rock Islands. Glide on the calm water, listen to the insects and birds, and feel the breath of nature. Professional coaching ensures that even beginners can get started easily.",
+        "photo_title": "Digital Content Creations",
+        "photo_desc": "Professional photographers accompany you to record every wonderful moment and leave the most beautiful memories.",
+        "photo_full_desc": "Rarely come to Palau, how can you not leave beautiful photos? Our professional photography team will accompany you to shoot, whether it is underwater heroic posture or land beauty, capturing it perfectly for you. Drone perspective is provided to make your memories more three-dimensional and shocking."
     }
 }
