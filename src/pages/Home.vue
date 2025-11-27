@@ -13,9 +13,13 @@
     <section class="trust-bar">
       <div class="container">
         <h2>{{ $t('home.trust_bar_title') }}</h2>
-        <div class="logos">
-          <div class="logo-item">世界等一等</div>
-          <div class="logo-item">下課花路米</div>
+        <div class="video-grid">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/lA0e0ckrPX8?si=DsiyPutbNk55KP0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/n5bCbQjYEo8?si=wT6NjnagxACwCWN2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -75,19 +79,26 @@
   background: #f9f9f9;
   text-align: center;
 }
-.logos {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   margin-top: 30px;
 }
-.logo-item {
-  font-weight: bold;
-  color: #666;
-  font-size: 1.5rem;
-  border: 2px dashed #ccc;
-  padding: 10px 20px;
-  border-radius: 8px;
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .services {
   padding: 80px 0;
