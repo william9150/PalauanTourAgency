@@ -6,7 +6,7 @@ export const routes: RouteRecordRaw[] = [
     { path: '/about-palau', component: () => import('../pages/AboutPalau.vue'), meta: { title: 'about_palau' } },
     { path: '/tours', component: () => import('../pages/Tours.vue'), meta: { title: 'tours' } },
     { path: '/tours/:id', component: () => import('../pages/TourDetail.vue'), meta: { title: 'tours' } },
-    { path: '/about-palau/:id', component: () => import('../pages/AttractionDetail.vue'), meta: { title: 'about_palau' } },
+
     { path: '/guide', component: () => import('../pages/Guide.vue'), meta: { title: 'guide' } },
     { path: '/booking', component: () => import('../pages/Booking.vue'), meta: { title: 'booking' } },
 ]

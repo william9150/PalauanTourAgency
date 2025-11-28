@@ -1,0 +1,75 @@
+[
+    {
+        "id": "big-drop-off",
+        "titleKey": "attractions.big_drop_off_title",
+        "descKey": "attractions.big_drop_off_desc",
+        "image": "attraction-big-drop-off.jpg",
+        "fullDescKey": "attractions.big_drop_off_full_desc",
+        "tags": [
+            "diving",
+            "nature",
+            "must_visit"
+        ]
+    },
+    {
+        "id": "jellyfish-lake",
+        "titleKey": "attractions.jellyfish_lake_title",
+        "descKey": "attractions.jellyfish_lake_desc",
+        "image": "attraction-jellyfish-lake.jpg",
+        "fullDescKey": "attractions.jellyfish_lake_full_desc",
+        "tags": [
+            "snorkeling",
+            "nature",
+            "unique",
+            "must_visit"
+        ]
+    },
+    {
+        "id": "milky-way",
+        "titleKey": "attractions.milky_way_title",
+        "descKey": "attractions.milky_way_desc",
+        "image": "attraction-milky-way.jpg",
+        "fullDescKey": "attractions.milky_way_full_desc",
+        "tags": [
+            "spa",
+            "relaxation",
+            "nature"
+        ]
+    },
+    {
+        "id": "long-beach",
+        "titleKey": "attractions.long_beach_title",
+        "descKey": "attractions.long_beach_desc",
+        "image": "attraction-long-beach.jpg",
+        "fullDescKey": "attractions.long_beach_full_desc",
+        "tags": [
+            "beach",
+            "photography",
+            "nature"
+        ]
+    },
+    {
+        "id": "german-channel",
+        "titleKey": "attractions.german_channel_title",
+        "descKey": "attractions.german_channel_desc",
+        "image": "attraction-german-channel.jpg",
+        "fullDescKey": "attractions.german_channel_full_desc",
+        "tags": [
+            "diving",
+            "history",
+            "nature"
+        ]
+    },
+    {
+        "id": "shark-city",
+        "titleKey": "attractions.shark_city_title",
+        "descKey": "attractions.shark_city_desc",
+        "image": "attraction-shark-city.jpg",
+        "fullDescKey": "attractions.shark_city_full_desc",
+        "tags": [
+            "snorkeling",
+            "diving",
+            "adventure"
+        ]
+    }
+]

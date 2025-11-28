@@ -1,3 +1,44 @@
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed, ref, onMounted } from 'vue'
+import { useAttractions, type Attraction } from '../composables/useAttractions'
+
+const { t } = useI18n()
+const { attractions } = useAttractions()
+
+const dialogVisible = ref(false)
+const selectedAttraction = ref<Attraction | null>(null)
+const mounted = ref(false)
+
+onMounted(() => {
+  mounted.value = true
+})
+
+const openModal = (attraction: Attraction) => {
+  selectedAttraction.value = attraction
+  dialogVisible.value = true
+}
+
+useHead({
+  title: computed(() => t('common.about_palau')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.about_palau_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.about_palau')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.about_palau_desc')),
+    },
+  ],
+})
+</script>
+
 <template>
   <div class="page-container">
     <div class="header-section">
@@ -30,46 +71,36 @@
       <div class="attractions-section">
         <h2>🏝️ 必訪景點 (Must Visit)</h2>
         <div class="attractions-grid">
-          <el-card v-for="attraction in attractions" :key="attraction.id" class="attraction-card" :body-style="{ padding: '0px' }" shadow="hover" @click="$router.push(`/about-palau/${attraction.id}`)">
+          <el-card v-for="attraction in attractions" :key="attraction.id" class="attraction-card" :body-style="{ padding: '0px' }" shadow="hover" @click="openModal(attraction)">
             <img :src="attraction.image" class="image" />
             <div style="padding: 14px">
               <h3>{{ $t(attraction.titleKey) }}</h3>
               <p class="desc">{{ $t(attraction.descKey) }}</p>
+              <div class="tags">
+                <el-tag v-for="tag in attraction.tags" :key="tag" size="small" effect="plain" class="tag">
+                  {{ $t(`tags.${tag}`) }}
+                </el-tag>
+              </div>
             </div>
           </el-card>
         </div>
       </div>
     </div>
+
+    <!-- Attraction Detail Modal -->
+    <el-dialog v-if="mounted" v-model="dialogVisible" :title="$t(selectedAttraction?.titleKey || '')" width="90%" style="max-width: 600px;" align-center>
+      <div v-if="selectedAttraction" class="modal-content">
+        <img :src="selectedAttraction.image" class="modal-image" />
+        <div class="modal-tags">
+          <el-tag v-for="tag in selectedAttraction.tags" :key="tag" effect="dark" class="tag">
+            {{ $t(`tags.${tag}`) }}
+          </el-tag>
+        </div>
+        <p class="modal-desc">{{ $t(selectedAttraction.fullDescKey || selectedAttraction.descKey) }}</p>
+      </div>
+    </el-dialog>
   </div>
 </template>
-
-<script setup lang="ts">
-import { useHead } from '@vueuse/head'
-import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
-import { useAttractions } from '../composables/useAttractions'
-
-const { t } = useI18n()
-const { attractions } = useAttractions()
-
-useHead({
-  title: computed(() => t('common.about_palau')),
-  meta: [
-    {
-      name: 'description',
-      content: computed(() => t('meta.about_palau_desc')),
-    },
-    {
-      property: 'og:title',
-      content: computed(() => `${t('common.about_palau')} | ${t('common.title')}`),
-    },
-    {
-      property: 'og:description',
-      content: computed(() => t('meta.about_palau_desc')),
-    },
-  ],
-})
-</script>
 
 <style scoped>
 .page-container {
@@ -156,5 +187,27 @@ useHead({
   color: #666;
   font-size: 0.9rem;
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tag {
+  margin-right: 5px;
+}
+.modal-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.modal-tags {
+  margin-bottom: 20px;
+}
+.modal-desc {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1rem;
 }
 </style>

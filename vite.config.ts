@@ -24,13 +24,7 @@ export default defineConfig({
         '/tours/combos',
         '/tours/day-tours',
         '/tours/sup',
-        '/tours/photo',
-        '/about-palau/big-drop-off',
-        '/about-palau/jellyfish-lake',
-        '/about-palau/milky-way',
-        '/about-palau/long-beach',
-        '/about-palau/german-channel',
-        '/about-palau/shark-city'
+        '/tours/photo'
       ]
     }),
   ],
