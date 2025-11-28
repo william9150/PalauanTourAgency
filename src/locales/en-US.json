@@ -10,10 +10,11 @@
         "booking": "Book Now",
         "copyright": "© {year} Palauan Tour. All rights reserved.",
         "line_consult": "Line Consultation",
-        "instagram": "Instagram"
+        "instagram": "Instagram",
+        "view_on_map": "View on Google Maps"
     },
     "home": {
-        "hero_title": "Main Quest | Sustainable Travel × Island Exploration",
+        "hero_title": "Sustainable Travel × Island Exploration",
         "hero_subtitle": "Explore the fantasy and beauty of Palau",
         "start_adventure": "Start Adventure",
         "trust_bar_title": "Player Recommendations",
@@ -38,48 +39,5 @@
         "photo_title": "Digital Content Creations",
         "photo_desc": "Professional photographers accompany you to record every wonderful moment and leave the most beautiful memories.",
         "photo_full_desc": "Rarely come to Palau, how can you not leave beautiful photos? Our professional photography team will accompany you to shoot, whether it is underwater heroic posture or land beauty, capturing it perfectly for you. Drone perspective is provided to make your memories more three-dimensional and shocking."
-    },
-    "attractions": {
-        "big_drop_off_title": "Big Drop Off",
-        "big_drop_off_desc": "Top of the seven underwater wonders of the world, a vertical coral cliff.",
-        "big_drop_off_full_desc": "Big Drop Off is one of Palau's most famous dive sites. The seabed drops vertically from 3 feet to 2000 feet deep, forming a spectacular drop-off wall. There are abundant soft and hard corals and colorful tropical fish, making it a paradise for divers.",
-        "jellyfish_lake_title": "Jellyfish Lake",
-        "jellyfish_lake_desc": "A dreamy experience dancing with thousands of non-toxic jellyfish.",
-        "jellyfish_lake_full_desc": "Jellyfish Lake is a national treasure of Palau. The lake is home to thousands of golden jellyfish that have evolved to be non-toxic. Snorkeling in the lake, surrounded by soft jellyfish, feels like being in a fantasy scene in outer space.",
-        "milky_way_title": "Milky Way",
-        "milky_way_desc": "Natural volcanic mud SPA, making skin smooth as silk.",
-        "milky_way_full_desc": "Milky Way is not actually a lake, but a lagoon surrounded by islands. It is named after the white volcanic mud deposited at the bottom of the lake, which makes the seawater milky white. Visitors can apply volcanic mud to their bodies and enjoy a natural beauty SPA.",
-        "long_beach_title": "Long Beach",
-        "long_beach_desc": "A dreamy white sand beach that appears only at low tide.",
-        "long_beach_full_desc": "Long Beach is located in the Rock Islands. Whenever the tide goes down, a stretch of white sand beach about one kilometer long emerges between two islands. Walking on the beach surrounded by blue sea and sky is an excellent place for wedding photos and internet celebrity photos.",
-        "german_channel_title": "German Channel",
-        "german_channel_desc": "The fantasy spectrum of seven-colored seawater, a must-pass place for manta rays.",
-        "german_channel_full_desc": "The German Channel is a channel artificially excavated during World War II to transport minerals. Due to the varying depths of the sea water, it presents seven colors such as dark blue, light blue, and emerald green under the sunlight, which is beautiful. This is also a must-pass place for manta rays to migrate. If you are lucky, you can see the huge figure of manta rays.",
-        "shark_city_title": "Shark City",
-        "shark_city_desc": "Exciting experience swimming with dozens of blacktip sharks.",
-        "shark_city_full_desc": "Shark City is located next to Ngermeaus Island, where a large number of blacktip sharks gather. Under the guidance of a guide, you can snorkel safely and observe the shocking scene of these marine predators shuttling under your feet up close.",
-        "guide_desc": "Palau Travel Guide: Visa information, packing list, entry regulations, local life information, and snorkeling equipment rental price list.",
-        "booking_desc": "Palauan Tour Booking Guide: From consultation, customized itinerary, quotation discussion to contract signing, 7 steps to easily complete your Palau trip booking."
-    },
-    "tags": {
-        "diving": "Diving",
-        "nature": "Nature",
-        "must_visit": "Must Visit",
-        "snorkeling": "Snorkeling",
-        "unique": "Unique",
-        "spa": "SPA",
-        "relaxation": "Relaxation",
-        "beach": "Beach",
-        "photography": "Photography",
-        "history": "History",
-        "adventure": "Adventure"
-    },
-    "meta": {
-        "home_desc": "Palauan Tour - Expert in Palau travel, offering professional itineraries including snorkeling, diving, uninhabited island lunches, and more. Explore the fantasy and beauty of Palau.",
-        "about_us_desc": "Palauan Tour Brand Story - We are dedicated to combining sustainable travel with island exploration, creating the best memories for you in Palau.",
-        "about_palau_desc": "About Palau - The pearl dropped by God in the Pacific. Learn about Palau's geography, climate, culture, and must-visit attractions.",
-        "tours_desc": "Palauan Tour Adventure Modes - Offering group tours, honeymoons, private boat charters, and more to satisfy your diverse travel needs.",
-        "guide_desc": "Palau Travel Guide - Practical information including visas, luggage, entry regulations, and snorkeling equipment rental prices.",
-        "booking_desc": "Book Palauan Tour now and start your Palau adventure!"
     }
 }

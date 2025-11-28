@@ -2,6 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { useI18n } from 'vue-i18n'
 import { computed, ref, onMounted } from 'vue'
+import { Location } from '@element-plus/icons-vue'
 import { useAttractions, type Attraction } from '../composables/useAttractions'
 
 const { t } = useI18n()
@@ -74,11 +75,11 @@ useHead({
           <el-card v-for="attraction in attractions" :key="attraction.id" class="attraction-card" :body-style="{ padding: '0px' }" shadow="hover" @click="openModal(attraction)">
             <img :src="attraction.image" class="image" />
             <div style="padding: 14px">
-              <h3>{{ $t(attraction.titleKey) }}</h3>
-              <p class="desc">{{ $t(attraction.descKey) }}</p>
+              <h3>{{ attraction.name }}</h3>
+              <p class="desc">{{ attraction.description }}</p>
               <div class="tags">
                 <el-tag v-for="tag in attraction.tags" :key="tag" size="small" effect="plain" class="tag">
-                  {{ $t(`tags.${tag}`) }}
+                  {{ tag }}
                 </el-tag>
               </div>
             </div>
@@ -88,15 +89,22 @@ useHead({
     </div>
 
     <!-- Attraction Detail Modal -->
-    <el-dialog v-if="mounted" v-model="dialogVisible" :title="$t(selectedAttraction?.titleKey || '')" width="90%" style="max-width: 600px;" align-center>
+    <el-dialog v-if="mounted" v-model="dialogVisible" :title="selectedAttraction?.name || ''" width="90%" style="max-width: 600px;" align-center>
       <div v-if="selectedAttraction" class="modal-content">
         <img :src="selectedAttraction.image" class="modal-image" />
         <div class="modal-tags">
           <el-tag v-for="tag in selectedAttraction.tags" :key="tag" effect="dark" class="tag">
-            {{ $t(`tags.${tag}`) }}
+            {{ tag }}
           </el-tag>
         </div>
-        <p class="modal-desc">{{ $t(selectedAttraction.fullDescKey || selectedAttraction.descKey) }}</p>
+        <p class="modal-desc">{{ selectedAttraction.longDescription }}</p>
+        <div class="modal-map">
+          <a :href="selectedAttraction.googleMapUrl" target="_blank" rel="noopener noreferrer" class="map-link">
+            <el-button type="primary" :icon="Location">
+              {{ $t('common.view_on_map') || '在 Google 地圖上查看' }}
+            </el-button>
+          </a>
+        </div>
       </div>
     </el-dialog>
   </div>
@@ -105,7 +113,7 @@ useHead({
 <style scoped>
 .page-container {
   padding: 40px 20px;
-  max-width: 800px;
+  max-width: 1200px; /* 增加寬度以容納3欄布局 */
   margin: 0 auto;
 }
 .header-section {
@@ -160,20 +168,39 @@ useHead({
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
+
+/* 電腦版: 3 columns */
 .attractions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
+/* 平板: 2 columns */
+@media (max-width: 1024px) {
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 手機: 1 column */
+@media (max-width: 768px) {
+  .attractions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .attraction-card {
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .attraction-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-secondary);
   box-shadow: 0 8px 16px rgba(86, 191, 194, 0.2);
 }
+
 .attraction-card .image {
   width: 100%;
   height: 200px;
@@ -209,5 +236,13 @@ useHead({
   line-height: 1.8;
   color: #444;
   font-size: 1rem;
+  margin-bottom: 20px;
+}
+.modal-map {
+  text-align: center;
+  margin-top: 20px;
+}
+.map-link {
+  text-decoration: none;
 }
 </style>

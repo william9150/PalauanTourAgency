@@ -1,75 +1,192 @@
 [
     {
         "id": "big-drop-off",
-        "titleKey": "attractions.big_drop_off_title",
-        "descKey": "attractions.big_drop_off_desc",
+        "name": {
+            "zh-TW": "大斷層",
+            "en-US": "Big Drop Off"
+        },
+        "description": {
+            "zh-TW": "世界七大潛點之首，垂直陡降的珊瑚峭壁。",
+            "en-US": "Top of the seven underwater wonders of the world, a vertical coral cliff."
+        },
+        "longDescription": {
+            "zh-TW": "大斷層是帛琉最著名的潛點之一，海床從 3 呎突然垂直落差到 2000 呎深，形成壯觀的斷層壁。這裡有豐富的軟硬珊瑚和色彩斑斕的熱帶魚群，是潛水愛好者的天堂。",
+            "en-US": "Big Drop Off is one of Palau's most famous dive sites. The seabed drops vertically from 3 feet to 2000 feet deep, forming a spectacular drop-off wall. There are abundant soft and hard corals and colorful tropical fish, making it a paradise for divers."
+        },
         "image": "attraction-big-drop-off.jpg",
-        "fullDescKey": "attractions.big_drop_off_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=Big+Drop+Off+Palau",
         "tags": [
-            "diving",
-            "nature",
-            "must_visit"
+            {
+                "zh-TW": "潛水",
+                "en-US": "Diving"
+            },
+            {
+                "zh-TW": "自然生態",
+                "en-US": "Nature"
+            },
+            {
+                "zh-TW": "必訪",
+                "en-US": "Must Visit"
+            }
         ]
     },
     {
         "id": "jellyfish-lake",
-        "titleKey": "attractions.jellyfish_lake_title",
-        "descKey": "attractions.jellyfish_lake_desc",
+        "name": {
+            "zh-TW": "水母湖",
+            "en-US": "Jellyfish Lake"
+        },
+        "description": {
+            "zh-TW": "與成千上萬隻無毒水母共舞的夢幻體驗。",
+            "en-US": "A dreamy experience dancing with thousands of non-toxic jellyfish."
+        },
+        "longDescription": {
+            "zh-TW": "水母湖是帛琉的國寶級景點，湖中住著成千上萬隻演化成無毒的黃金水母。在湖中浮潛，被柔軟的水母包圍，彷彿置身於外太空的夢幻場景。",
+            "en-US": "Jellyfish Lake is a national treasure of Palau. The lake is home to thousands of golden jellyfish that have evolved to be non-toxic. Snorkeling in the lake, surrounded by soft jellyfish, feels like being in a fantasy scene in outer space."
+        },
         "image": "attraction-jellyfish-lake.jpg",
-        "fullDescKey": "attractions.jellyfish_lake_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=Jellyfish+Lake+Palau",
         "tags": [
-            "snorkeling",
-            "nature",
-            "unique",
-            "must_visit"
+            {
+                "zh-TW": "浮潛",
+                "en-US": "Snorkeling"
+            },
+            {
+                "zh-TW": "自然生態",
+                "en-US": "Nature"
+            },
+            {
+                "zh-TW": "獨特體驗",
+                "en-US": "Unique"
+            },
+            {
+                "zh-TW": "必訪",
+                "en-US": "Must Visit"
+            }
         ]
     },
     {
         "id": "milky-way",
-        "titleKey": "attractions.milky_way_title",
-        "descKey": "attractions.milky_way_desc",
+        "name": {
+            "zh-TW": "牛奶湖",
+            "en-US": "Milky Way"
+        },
+        "description": {
+            "zh-TW": "天然的火山泥 SPA，讓肌膚滑嫩如絲。",
+            "en-US": "Natural volcanic mud SPA, making skin smooth as silk."
+        },
+        "longDescription": {
+            "zh-TW": "牛奶湖其實不是湖，而是一個被群島包圍的潟湖。因湖底沉積了白色的火山泥，使海水呈現乳白色而得名。遊客可以將火山泥塗抹在身上，享受天然的美容 SPA。",
+            "en-US": "Milky Way is not actually a lake, but a lagoon surrounded by islands. It is named after the white volcanic mud deposited at the bottom of the lake, which makes the seawater milky white. Visitors can apply volcanic mud to their bodies and enjoy a natural beauty SPA."
+        },
         "image": "attraction-milky-way.jpg",
-        "fullDescKey": "attractions.milky_way_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=Milky+Way+Palau",
         "tags": [
-            "spa",
-            "relaxation",
-            "nature"
+            {
+                "zh-TW": "SPA",
+                "en-US": "SPA"
+            },
+            {
+                "zh-TW": "放鬆",
+                "en-US": "Relaxation"
+            },
+            {
+                "zh-TW": "自然生態",
+                "en-US": "Nature"
+            }
         ]
     },
     {
         "id": "long-beach",
-        "titleKey": "attractions.long_beach_title",
-        "descKey": "attractions.long_beach_desc",
+        "name": {
+            "zh-TW": "長沙灘",
+            "en-US": "Long Beach"
+        },
+        "description": {
+            "zh-TW": "退潮時才會浮現的夢幻白沙灘。",
+            "en-US": "A dreamy white sand beach that appears only at low tide."
+        },
+        "longDescription": {
+            "zh-TW": "長沙灘位於洛克群島中，每當退潮時，兩座島嶼之間會浮現出一條綿延約一公里的潔白沙灘。漫步在被碧海藍天包圍的沙灘上，是拍攝婚紗與網美照的絕佳地點。",
+            "en-US": "Long Beach is located in the Rock Islands. Whenever the tide goes down, a stretch of white sand beach about one kilometer long emerges between two islands. Walking on the beach surrounded by blue sea and sky is an excellent place for wedding photos and internet celebrity photos."
+        },
         "image": "attraction-long-beach.jpg",
-        "fullDescKey": "attractions.long_beach_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=Long+Beach+Palau",
         "tags": [
-            "beach",
-            "photography",
-            "nature"
+            {
+                "zh-TW": "沙灘",
+                "en-US": "Beach"
+            },
+            {
+                "zh-TW": "攝影",
+                "en-US": "Photography"
+            },
+            {
+                "zh-TW": "自然生態",
+                "en-US": "Nature"
+            }
         ]
     },
     {
         "id": "german-channel",
-        "titleKey": "attractions.german_channel_title",
-        "descKey": "attractions.german_channel_desc",
+        "name": {
+            "zh-TW": "德國水道",
+            "en-US": "German Channel"
+        },
+        "description": {
+            "zh-TW": "七色海水的奇幻光譜，魟魚的必經之地。",
+            "en-US": "The fantasy spectrum of seven-colored seawater, a must-pass place for manta rays."
+        },
+        "longDescription": {
+            "zh-TW": "德國水道是二戰時期為了運輸礦產而人工開鑿的水道。由於海水深淺不一，在陽光照射下呈現出深藍、淺藍、翠綠等七種顏色，美不勝收。這裡也是魟魚迴游的必經之地，運氣好還能看見巨大的魟魚身影。",
+            "en-US": "The German Channel is a channel artificially excavated during World War II to transport minerals. Due to the varying depths of the sea water, it presents seven colors such as dark blue, light blue, and emerald green under the sunlight, which is beautiful. This is also a must-pass place for manta rays to migrate. If you are lucky, you can see the huge figure of manta rays."
+        },
         "image": "attraction-german-channel.jpg",
-        "fullDescKey": "attractions.german_channel_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=German+Channel+Palau",
         "tags": [
-            "diving",
-            "history",
-            "nature"
+            {
+                "zh-TW": "潛水",
+                "en-US": "Diving"
+            },
+            {
+                "zh-TW": "歷史遺跡",
+                "en-US": "History"
+            },
+            {
+                "zh-TW": "自然生態",
+                "en-US": "Nature"
+            }
         ]
     },
     {
         "id": "shark-city",
-        "titleKey": "attractions.shark_city_title",
-        "descKey": "attractions.shark_city_desc",
+        "name": {
+            "zh-TW": "鯊魚城",
+            "en-US": "Shark City"
+        },
+        "description": {
+            "zh-TW": "與數十隻黑鰭鯊共游的刺激體驗。",
+            "en-US": "Exciting experience swimming with dozens of blacktip sharks."
+        },
+        "longDescription": {
+            "zh-TW": "鯊魚城位於納美爾斯島旁，這裡聚集了大量的黑鰭鯊。在導遊的帶領下，您可以安全地浮潛，近距離觀察這些海洋獵食者在腳下穿梭的震撼畫面。",
+            "en-US": "Shark City is located next to Ngermeaus Island, where a large number of blacktip sharks gather. Under the guidance of a guide, you can snorkel safely and observe the shocking scene of these marine predators shuttling under your feet up close."
+        },
         "image": "attraction-shark-city.jpg",
-        "fullDescKey": "attractions.shark_city_full_desc",
+        "googleMapUrl": "https://maps.google.com/?q=Shark+City+Palau",
         "tags": [
-            "snorkeling",
-            "diving",
-            "adventure"
+            {
+                "zh-TW": "浮潛",
+                "en-US": "Snorkeling"
+            },
+            {
+                "zh-TW": "潛水",
+                "en-US": "Diving"
+            },
+            {
+                "zh-TW": "冒險",
+                "en-US": "Adventure"
+            }
         ]
     }
 ]
