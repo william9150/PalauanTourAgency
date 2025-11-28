@@ -119,6 +119,81 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
+
+useHead({
+  title: computed(() => t('common.booking')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.booking_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.booking')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.booking_desc')),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'Palauan Tour 報名流程',
+        description: '從諮詢到出發，7個步驟輕鬆完成帛琉之旅報名。',
+        step: [
+          {
+            '@type': 'HowToStep',
+            name: '開啟對話框',
+            text: '透過 Instagram 或 Line 私訊我們，開啟帛琉對話。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '客製化關卡設計',
+            text: '告訴我們您的需求（日期、人數、目的、願望清單），量身打造行程。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '行程報價與討論',
+            text: '提供初步行程檔案與報價，可持續討論調整。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '合約簽訂',
+            text: '確認行程與報價後，簽立旅遊定型化契約。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '訂金收取',
+            text: '匯入指定台灣旅行社帳號支付訂金。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '關卡包領取',
+            text: '出發前3天收到完整行前資料（行程、入境表、保險等）。'
+          },
+          {
+            '@type': 'HowToStep',
+            name: '當地尾款收取',
+            text: '抵達帛琉確認無誤後，支付美金尾款。'
+          }
+        ]
+      })
+    }
+  ]
+})
+
+</script>
+
 <style scoped>
 .page-container {
   padding: 40px 20px;

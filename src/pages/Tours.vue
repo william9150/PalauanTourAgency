@@ -58,9 +58,31 @@
 
 <script setup lang="ts">
 import { Trophy, Ship, House, User, Guide, Camera } from '@element-plus/icons-vue'
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 import { useTours } from '../composables/useTours'
 
+const { t } = useI18n()
 const { tours } = useTours()
+
+useHead({
+  title: computed(() => t('common.tours')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.tours_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.tours')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.tours_desc')),
+    },
+  ],
+})
 </script>
 
 <style scoped>

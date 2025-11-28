@@ -33,6 +33,32 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
+
+useHead({
+  title: computed(() => t('common.about_us')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.about_us_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.about_us')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.about_us_desc')),
+    },
+  ],
+})
+</script>
+
 <style scoped>
 .page-container {
   padding: 40px 20px;

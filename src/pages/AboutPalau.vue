@@ -44,9 +44,31 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 import { useAttractions } from '../composables/useAttractions'
 
+const { t } = useI18n()
 const { attractions } = useAttractions()
+
+useHead({
+  title: computed(() => t('common.about_palau')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.about_palau_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.about_palau')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.about_palau_desc')),
+    },
+  ],
+})
 </script>
 
 <style scoped>

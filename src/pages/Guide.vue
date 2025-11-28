@@ -91,9 +91,88 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
 
-const packingList = ref([])
+const { t } = useI18n()
+
+useHead({
+  title: computed(() => t('common.guide')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.guide_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.guide')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.guide_desc')),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '帛琉簽證需要辦理嗎？',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '持有效期限 6 個月以上之中華民國護照正本，享 90 天免簽證待遇。'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '去帛琉需要帶什麼？',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '必備：護照、現金（美金）、信用卡、夏季衣服、泳衣、個人藥品、玩水裝備、物理防曬用品。嚴禁攜帶化學性防曬乳。'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '帛琉電壓是多少？',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '110V 雙孔，插座與台灣相通，不需轉接頭。'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '帛琉網路狀況如何？',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '海上無訊號。建議購買網卡，五天無限流量吃到飽約 US$20。'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '帛琉小費怎麼給？',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '建議金額：導遊每天 US$10，領隊每天 US$5，船家每次 US$2，床頭小費每天 US$1。'
+            }
+          }
+        ]
+      })
+    }
+  ]
+})
+
+const packingList = ref([
+  '護照、現金（美金）、信用卡',
+  '夏季衣服、泳衣',
+  '個人藥品',
+  '玩水裝備 (面鏡、呼吸管、防水相機)',
+  '物理防曬用品 (墨鏡、帽子、毛巾衣)'
+])
 
 interface RentalItem {
   item: string

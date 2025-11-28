@@ -53,19 +53,83 @@
   </div>
 </template>
 
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
+
+useHead({
+  title: computed(() => t('common.home')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.home_desc')),
+    },
+    {
+      property: 'og:title',
+      content: computed(() => `${t('common.home')} | ${t('common.title')}`),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.home_desc')),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'TravelAgency',
+        name: 'Palauan Tour',
+        image: 'https://palauantour.com/logo.svg',
+        description: 'Palauan Tour 帛琉專業旅行社，提供永續旅行、海島探索、團體旅遊、蜜月旅行及私人包船服務。',
+        url: 'https://palauantour.com',
+        telephone: '+886-912-345-678',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Koror',
+          addressLocality: 'Koror',
+          addressCountry: 'PW'
+        },
+        priceRange: '$$'
+      })
+    }
+  ]
+})
+</script>
+
 <style scoped>
 .hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/hero-bg.png') no-repeat center center;
+  background-image: url('../assets/hero-bg.png');
   background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
