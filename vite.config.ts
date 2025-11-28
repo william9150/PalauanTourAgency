@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Sitemap from 'vite-plugin-sitemap'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -16,6 +17,21 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
       dts: 'src/components.d.ts',
+    }),
+    Sitemap({
+      hostname: 'https://palauantour.com',
+      dynamicRoutes: [
+        '/tours/combos',
+        '/tours/day-tours',
+        '/tours/sup',
+        '/tours/photo',
+        '/about-palau/big-drop-off',
+        '/about-palau/jellyfish-lake',
+        '/about-palau/milky-way',
+        '/about-palau/long-beach',
+        '/about-palau/german-channel',
+        '/about-palau/shark-city'
+      ]
     }),
   ],
   // @ts-expect-error ssgOptions is not in UserConfig type
