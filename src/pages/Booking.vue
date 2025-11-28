@@ -108,21 +108,16 @@
     <div class="cta-section">
       <h3>GAME START！祝您有一趟難忘的帛琉冒險之旅！</h3>
       <div class="contact-buttons">
-        <el-button type="success" size="large" @click="openLink('https://line.me/ti/p/YS6uwsGt3P')">
+        <a href="https://line.me/ti/p/YS6uwsGt3P" target="_blank" class="contact-link line">
           LINE 諮詢
-        </el-button>
-        <el-button type="warning" color="#E1306C" size="large" @click="openLink('https://www.instagram.com/palauan_tour.co/')">
+        </a>
+        <a href="https://www.instagram.com/palauan_tour.co/" target="_blank" class="contact-link ig">
           Instagram
-        </el-button>
+        </a>
       </div>
     </div>
   </div>
 </template>
-<script setup lang="ts">
-const openLink = (url: string) => {
-  window.open(url, '_blank')
-}
-</script>
 
 <style scoped>
 .page-container {
@@ -179,7 +174,31 @@ const openLink = (url: string) => {
 }
 .contact-buttons {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.contact-link {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  min-width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.line {
+  background-color: #00B900;
+}
+.ig {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 </style>

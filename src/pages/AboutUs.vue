@@ -69,7 +69,7 @@
 .value-item {
   text-align: center;
   padding: 20px;
-  background: #f9f9f9;
+  background: var(--color-background);
   border-radius: 8px;
 }
 .value-item h3 {

@@ -118,6 +118,8 @@ const { attractions } = useAttractions()
 }
 .attraction-card:hover {
   transform: translateY(-5px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 8px 16px rgba(86, 191, 194, 0.2);
 }
 .attraction-card .image {
   width: 100%;

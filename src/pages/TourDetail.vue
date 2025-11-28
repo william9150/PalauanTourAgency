@@ -81,7 +81,7 @@ useHead({
 }
 .tour-info {
   padding: 20px;
-  background: #f9f9f9;
+  background: var(--color-background);
   border-radius: 16px;
 }
 .description {

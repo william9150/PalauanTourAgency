@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>{{ $t('home.hero_title') }}</h1>
         <p>{{ $t('home.hero_subtitle') }}</p>
-        <el-button type="primary" size="large" @click="$router.push('/booking')">{{ $t('home.start_adventure') }}</el-button>
+        <el-button type="warning" size="large" style="background-color: var(--color-accent); border-color: var(--color-accent); color: #333; font-weight: bold;" @click="$router.push('/booking')">{{ $t('home.start_adventure') }}</el-button>
       </div>
     </section>
 
@@ -76,7 +76,7 @@
 }
 .trust-bar {
   padding: 60px 0;
-  background: #f9f9f9;
+  background: var(--color-background);
   text-align: center;
 }
 .video-grid {
