@@ -19,7 +19,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     Sitemap({
-      hostname: 'https://palauantour.com',
+      hostname: 'https://palauantour.zeabur.app',
       dynamicRoutes: [
         '/tours/combos',
         '/tours/day-tours',
