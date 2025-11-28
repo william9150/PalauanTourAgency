@@ -73,7 +73,7 @@ useHead({
         <h2>🏝️ 必訪景點 (Must Visit)</h2>
         <div class="attractions-grid">
           <el-card v-for="attraction in attractions" :key="attraction.id" class="attraction-card" :body-style="{ padding: '0px' }" shadow="hover" @click="openModal(attraction)">
-            <img :src="attraction.image" class="image" />
+            <img :src="attraction.image" :alt="attraction.name" class="image" loading="lazy" />
             <div style="padding: 14px">
               <h3>{{ attraction.name }}</h3>
               <p class="desc">{{ attraction.description }}</p>
@@ -91,7 +91,7 @@ useHead({
     <!-- Attraction Detail Modal -->
     <el-dialog v-if="mounted" v-model="dialogVisible" :title="selectedAttraction?.name || ''" width="90%" style="max-width: 600px;" align-center>
       <div v-if="selectedAttraction" class="modal-content">
-        <img :src="selectedAttraction.image" class="modal-image" />
+        <img :src="selectedAttraction.image" :alt="selectedAttraction.name" class="modal-image" />
         <div class="modal-tags">
           <el-tag v-for="tag in selectedAttraction.tags" :key="tag" effect="dark" class="tag">
             {{ tag }}

@@ -7,7 +7,7 @@
 
     <div class="tours-grid">
       <el-card v-for="tour in tours" :key="tour.id" class="tour-card" :body-style="{ padding: '0px' }">
-        <img :src="tour.image" class="image" />
+        <img :src="tour.image" :alt="$t(tour.titleKey)" class="image" loading="lazy" />
         <div style="padding: 14px">
           <h3>{{ $t(tour.titleKey) }}</h3>
           <p>{{ $t(tour.descKey) }}</p>
