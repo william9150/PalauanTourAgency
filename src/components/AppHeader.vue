@@ -11,11 +11,8 @@
       <div class="nav-wrapper desktop-menu">
         <el-menu mode="horizontal" :router="true" :default-active="$route.path" :ellipsis="false" class="nav-menu">
           <el-menu-item index="/">{{ $t('common.home') }}</el-menu-item>
-          <el-sub-menu index="/about">
-            <template #title>{{ $t('common.about') }}</template>
-            <el-menu-item index="/about-us">{{ $t('common.about_us') }}</el-menu-item>
-            <el-menu-item index="/about-palau">{{ $t('common.about_palau') }}</el-menu-item>
-          </el-sub-menu>
+          <el-menu-item index="/about-us">{{ $t('common.about_us') }}</el-menu-item>
+          <el-menu-item index="/about-palau">{{ $t('common.about_palau') }}</el-menu-item>
           <el-menu-item index="/tours">{{ $t('common.tours') }}</el-menu-item>
           <el-menu-item index="/guide">{{ $t('common.guide') }}</el-menu-item>
           <el-menu-item index="/booking">{{ $t('common.booking') }}</el-menu-item>
@@ -44,11 +41,8 @@
       <el-drawer v-model="drawerVisible" title="Menu" direction="rtl" size="80%">
         <el-menu :router="true" :default-active="$route.path" class="mobile-nav-menu">
           <el-menu-item index="/" @click="drawerVisible = false">{{ $t('common.home') }}</el-menu-item>
-          <el-sub-menu index="/about">
-            <template #title>{{ $t('common.about') }}</template>
-            <el-menu-item index="/about-us" @click="drawerVisible = false">{{ $t('common.about_us') }}</el-menu-item>
-            <el-menu-item index="/about-palau" @click="drawerVisible = false">{{ $t('common.about_palau') }}</el-menu-item>
-          </el-sub-menu>
+          <el-menu-item index="/about-us" @click="drawerVisible = false">{{ $t('common.about_us') }}</el-menu-item>
+          <el-menu-item index="/about-palau" @click="drawerVisible = false">{{ $t('common.about_palau') }}</el-menu-item>
           <el-menu-item index="/tours" @click="drawerVisible = false">{{ $t('common.tours') }}</el-menu-item>
           <el-menu-item index="/guide" @click="drawerVisible = false">{{ $t('common.guide') }}</el-menu-item>
           <el-menu-item index="/booking" @click="drawerVisible = false">{{ $t('common.booking') }}</el-menu-item>

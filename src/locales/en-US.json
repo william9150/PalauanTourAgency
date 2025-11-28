@@ -38,5 +38,25 @@
         "photo_title": "Digital Content Creations",
         "photo_desc": "Professional photographers accompany you to record every wonderful moment and leave the most beautiful memories.",
         "photo_full_desc": "Rarely come to Palau, how can you not leave beautiful photos? Our professional photography team will accompany you to shoot, whether it is underwater heroic posture or land beauty, capturing it perfectly for you. Drone perspective is provided to make your memories more three-dimensional and shocking."
+    },
+    "attractions": {
+        "big_drop_off_title": "Big Drop Off",
+        "big_drop_off_desc": "Top of the seven underwater wonders of the world, a vertical coral cliff.",
+        "big_drop_off_full_desc": "Big Drop Off is one of Palau's most famous dive sites. The seabed drops vertically from 3 feet to 2000 feet deep, forming a spectacular drop-off wall. There are abundant soft and hard corals and colorful tropical fish, making it a paradise for divers.",
+        "jellyfish_lake_title": "Jellyfish Lake",
+        "jellyfish_lake_desc": "A dreamy experience dancing with thousands of non-toxic jellyfish.",
+        "jellyfish_lake_full_desc": "Jellyfish Lake is a national treasure of Palau. The lake is home to thousands of golden jellyfish that have evolved to be non-toxic. Snorkeling in the lake, surrounded by soft jellyfish, feels like being in a fantasy scene in outer space.",
+        "milky_way_title": "Milky Way",
+        "milky_way_desc": "Natural volcanic mud SPA, making skin smooth as silk.",
+        "milky_way_full_desc": "Milky Way is not actually a lake, but a lagoon surrounded by islands. It is named after the white volcanic mud deposited at the bottom of the lake, which makes the seawater milky white. Visitors can apply volcanic mud to their bodies and enjoy a natural beauty SPA.",
+        "long_beach_title": "Long Beach",
+        "long_beach_desc": "A dreamy white sand beach that only appears at low tide.",
+        "long_beach_full_desc": "Long Beach is located in the Rock Islands. Only at low tide will a long white sand beach be exposed, connecting two islands. The white sand and blue sea make it the best place for taking beautiful photos.",
+        "german_channel_title": "German Channel",
+        "german_channel_desc": "Miracle of colorful seawater, cleaning station for Manta Rays.",
+        "german_channel_full_desc": "German Channel is a channel blasted by Germans during World War II to transport phosphate. The color of the seawater here is distinct, from deep blue to light green, which is beautiful. It is also a famous dive site where huge Manta Rays can often be seen.",
+        "shark_city_title": "Shark City",
+        "shark_city_desc": "Shocking scene of observing shark schools up close.",
+        "shark_city_full_desc": "Shark City is located next to Ngermeaus Island, where a large number of blacktip reef sharks often gather. Visitors can snorkel on the surface and observe the sharks swimming under their feet up close, which is both exciting and safe."
     }
 }

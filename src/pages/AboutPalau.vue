@@ -26,9 +26,28 @@
           <li><strong>氣候</strong>：海島型氣候，年均溫 28~32°C。容易看見彩虹，故有「彩虹故鄉」之稱。</li>
         </ul>
       </div>
+
+      <div class="attractions-section">
+        <h2>🏝️ 必訪景點 (Must Visit)</h2>
+        <div class="attractions-grid">
+          <el-card v-for="attraction in attractions" :key="attraction.id" class="attraction-card" :body-style="{ padding: '0px' }" shadow="hover" @click="$router.push(`/about-palau/${attraction.id}`)">
+            <img :src="attraction.image" class="image" />
+            <div style="padding: 14px">
+              <h3>{{ $t(attraction.titleKey) }}</h3>
+              <p class="desc">{{ $t(attraction.descKey) }}</p>
+            </div>
+          </el-card>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useAttractions } from '../composables/useAttractions'
+
+const { attractions } = useAttractions()
+</script>
 
 <style scoped>
 .page-container {
@@ -78,5 +97,40 @@
   color: var(--el-color-primary);
   position: absolute;
   left: 0;
+}
+.attractions-section {
+  margin-top: 60px;
+}
+.attractions-section h2 {
+  color: var(--el-color-primary);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.attraction-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.attraction-card:hover {
+  transform: translateY(-5px);
+}
+.attraction-card .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.attraction-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--el-color-primary);
+}
+.attraction-card .desc {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 </style>

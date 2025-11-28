@@ -38,5 +38,25 @@
     "photo_title": "數位影像創作",
     "photo_desc": "專業攝影師隨行，為您記錄下每一個精彩瞬間，留下最美的回憶。",
     "photo_full_desc": "難得來到帛琉，怎能不留下美美的照片？我們的專業攝影團隊將隨行拍攝，無論是水下英姿還是陸上美照，都為您完美捕捉。提供空拍機視角，讓您的回憶更加立體震撼。"
+  },
+  "attractions": {
+    "big_drop_off_title": "大斷層 (Big Drop Off)",
+    "big_drop_off_desc": "世界七大潛點之首，垂直陡降的珊瑚峭壁。",
+    "big_drop_off_full_desc": "大斷層是帛琉最著名的潛點之一，海床從 3 呎突然垂直落差到 2000 呎深，形成壯觀的斷層壁。這裡有豐富的軟硬珊瑚和色彩斑斕的熱帶魚群，是潛水愛好者的天堂。",
+    "jellyfish_lake_title": "水母湖 (Jellyfish Lake)",
+    "jellyfish_lake_desc": "與成千上萬隻無毒水母共舞的夢幻體驗。",
+    "jellyfish_lake_full_desc": "水母湖是帛琉的國寶級景點，湖中住著成千上萬隻演化成無毒的黃金水母。在湖中浮潛，被柔軟的水母包圍，彷彿置身於外太空的夢幻場景。",
+    "milky_way_title": "牛奶湖 (Milky Way)",
+    "milky_way_desc": "天然的火山泥 SPA，讓肌膚滑嫩如絲。",
+    "milky_way_full_desc": "牛奶湖其實不是湖，而是一個被群島包圍的潟湖。因湖底沉積了白色的火山泥，使海水呈現乳白色而得名。遊客可以將火山泥塗抹在身上，享受天然的美容 SPA。",
+    "long_beach_title": "長沙灘 (Long Beach)",
+    "long_beach_desc": "退潮時才會出現的夢幻白沙灘。",
+    "long_beach_full_desc": "長沙灘位於洛克群島中，只有在退潮時才會露出一條長長的白色沙灘，將兩座島嶼連接起來。潔白的沙灘與碧藍的海水，是拍攝美照的最佳地點。",
+    "german_channel_title": "德國水道 (German Channel)",
+    "german_channel_desc": "七彩海水的奇蹟，鬼蝠魟的清潔站。",
+    "german_channel_full_desc": "德國水道是二戰時期德國人為了運輸磷礦而炸開的水道。這裡的海水顏色層次分明，從深藍到淺綠，美不勝收。這裡也是著名的潛點，常可見到巨大的鬼蝠魟。",
+    "shark_city_title": "鯊魚城 (Shark City)",
+    "shark_city_desc": "近距離觀察鯊魚群游的震撼場面。",
+    "shark_city_full_desc": "鯊魚城位於納美爾斯島旁，這裡常聚集著大量的黑鰭礁鯊。遊客可以在水面上浮潛，近距離觀察鯊魚在腳下群游的震撼畫面，既刺激又安全。"
   }
 }
