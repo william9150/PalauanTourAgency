@@ -5,4 +5,5 @@ Allow: /
 Sitemap: https://palauantour.zeabur.app/sitemap.xml
 
 # Crawl delay (optional, helps prevent server overload)
-Crawl-delay: 1
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 10

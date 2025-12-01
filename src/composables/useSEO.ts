@@ -68,12 +68,20 @@ export function useSEO(config: SEOConfig) {
                 { property: 'og:image', content: config.image },
                 { name: 'twitter:image', content: config.image }
             )
+            // Optional: Add dimensions if known (can be passed in config if needed in future)
+            // tags.push(
+            //    { property: 'og:image:width', content: '1200' },
+            //    { property: 'og:image:height', content: '630' }
+            // )
         }
 
         // Add keywords if provided
         if (config.keywords) {
             tags.push({ name: 'keywords', content: config.keywords })
         }
+
+        // Add Twitter Creator
+        tags.push({ name: 'twitter:creator', content: '@palauantour' })
 
         return tags
     })
