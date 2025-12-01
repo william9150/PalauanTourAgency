@@ -43,29 +43,27 @@ useHead({
 <template>
   <div class="page-container">
     <div class="header-section">
-      <h1>{{ $t('common.about_palau') }}</h1>
-      <p>探索這個被上帝灑落在太平洋上的珍珠，彩虹的故鄉。</p>
+      <h1>{{ $t('aboutpalau.title') }}</h1>
+      <p>{{ $t('aboutpalau.subtitle') }}</p>
     </div>
 
     <div class="content-section">
       <div class="pledge-section">
-        <h2>🌟 玩家宣示 (The Pledge)</h2>
-        <blockquote class="pledge-text">
-          我懷著感恩的心，珍惜帛琉的海洋與土地。<br>
-          我不傷害生物，也不拿取不屬於我的東西。<br>
-          我善待島上居民，以尊重與敬仰守護文化。<br>
-          我不留下垃圾與汙染，只留下笑容與回憶恩典。
-        </blockquote>
+        <h2>🌟 {{ $t('aboutpalau.pledge_title') }}</h2>
+        <p class="pledge-intro">
+          {{ $t('aboutpalau.pledge_intro') }}
+        </p>
+        <blockquote class="pledge-text" v-html="$t('aboutpalau.pledge_content')"></blockquote>
       </div>
 
       <div class="about-section">
-        <h2>🌏 認識帛琉 (About Palau)</h2>
+        <h2>🌏 {{ $t('aboutpalau.about_title') }}</h2>
         <ul class="info-list">
-          <li><strong>地理與人口</strong>：面積 484km²（約 1.8 個台北），島民約 16,000 人。</li>
-          <li><strong>語言溝通</strong>：官方語言是英文，簡單溝通大家都會懂。</li>
-          <li><strong>飛行時間</strong>：直飛約 4 小時。</li>
-          <li><strong>時差</strong>：比台灣快 1 個小時。</li>
-          <li><strong>氣候</strong>：海島型氣候，年均溫 28~32°C。容易看見彩虹，故有「彩虹故鄉」之稱。</li>
+          <li><strong>{{ $t('aboutpalau.geo_title') }}</strong>：{{ $t('aboutpalau.geo_desc') }}</li>
+          <li><strong>{{ $t('aboutpalau.heritage_title') }}</strong>：{{ $t('aboutpalau.heritage_desc') }}</li>
+          <li><strong>{{ $t('aboutpalau.culture_title') }}</strong>：{{ $t('aboutpalau.culture_desc') }}</li>
+          <li><strong>{{ $t('aboutpalau.climate_title') }}</strong>：{{ $t('aboutpalau.climate_desc') }}</li>
+          <li><strong>{{ $t('aboutpalau.wonders_title') }}</strong>：{{ $t('aboutpalau.wonders_desc') }}</li>
         </ul>
       </div>
 
@@ -136,6 +134,11 @@ useHead({
   font-style: italic;
   color: var(--el-color-success);
   line-height: 2;
+}
+.pledge-intro {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
 }
 .about-section h2 {
   color: var(--el-color-primary);

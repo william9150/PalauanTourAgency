@@ -4,7 +4,7 @@
     "home": "首頁",
     "about": "關於我們",
     "about_us": "品牌故事",
-    "about_palau": "認識帛琉",
+    "about_palau": "帛琉",
     "tours": "冒險模式",
     "guide": "攻略 & 租借",
     "booking": "立即報名",
@@ -12,6 +12,22 @@
     "line_consult": "Line 諮詢",
     "instagram": "Instagram",
     "view_on_map": "在 Google 地圖上查看"
+  },
+  "meta": {
+    "home_desc": "Palauan Tour 帛琉在地台灣導遊，提供帛琉旅遊、帛琉行程規劃、帛琉套裝行程、帛琉一日遊、帛琉自助攻略。專業浮潛、潛水、水肺、自潛、freediving、SUP 體驗，探索上帝的水族箱。團體旅遊、蜜月旅行、樂齡旅遊全方位服務。",
+    "home_keywords": "台灣,帛琉,帛琉在地導遊,帛琉在地台灣導遊,帛琉旅遊,帛琉行程,帛琉自助,帛琉一日遊,帛琉套裝行程,Palauan Taiwan,Palau,浮潛,潛水,水肺,自潛,freediving,SUP,上帝的水族箱,樂齡旅遊,水母湖,牛奶湖,大斷層,海島旅遊,永續旅行,蜜月旅行,團體旅遊,私人包船",
+    "about_us_desc": "Palauan Tour 帛琉在地台灣導遊品牌，致力於永續帛琉旅遊。專業華語導遊團隊提供深度帛琉海洋探索體驗，堅持生態保護理念，為台灣旅客打造最優質的帛琉行程服務。",
+    "about_us_keywords": "Palauan Tour,台灣,帛琉在地導遊,帛琉在地台灣導遊,品牌故事,永續旅遊,生態旅遊,專業導遊,帛琉旅遊專家,華語導遊",
+    "about_palau_desc": "探索 Pristine Paradise Palau。完整帛琉旅遊攻略：16 州介紹、傳統 Bai 文化、地理氣候、Pristine Paradise 環境稅 (PPEF)、必訪景點。探索七大水下奇蹟，規劃您的帛琉永續旅程。",
+    "about_palau_keywords": "Pristine Paradise Palau,帛琉,Palau,帛琉旅遊,水母湖,牛奶湖,大斷層,長沙灘,德國水道,鯊魚城,帛琉景點,帛琉攻略,帛琉簽證,帛琉自助,PPEF,帛琉誓詞",
+    "pledge_intro": "帛琉是世界上第一個將環境保護誓詞納入入境法律的國家。每一位遊客在入境時，都必須簽署這份誓詞，承諾守護這裡的自然環境。",
+    "pledge_content": "「帛琉之兒女，我身為貴客，<br>在您美麗而獨特的島嶼家園，我立誓會維護並保護您美麗而獨特的島嶼家園。<br>我發誓會輕手輕腳、行事仁慈、小心探索。<br>不該拿的東西，我不拿；<br>不該傷害的，我不傷害；<br>留下的唯一印記，是會被沖刷掉的腳印。」",
+    "tours_desc": "Palauan Tour 帛琉行程方案：帛琉套裝行程（住宿+旅遊）、帛琉一日遊精選、SUP 立槳體驗、專業水下攝影。提供浮潛、潛水、水肺、自潛 freediving 等多元水上活動。量身打造帛琉旅遊行程，適合樂齡旅遊、帛琉自助或跟團。",
+    "tours_keywords": "帛琉行程,帛琉套裝行程,帛琉一日遊,帛琉旅遊,帛琉自助,浮潛,潛水,水肺,自潛,freediving,SUP,立槳,水下攝影,帛琉出海,樂齡旅遊,上帝的水族箱",
+    "guide_desc": "帛琉旅遊完整攻略：Pristine Paradise 環境稅 (PPEF)、帛琉誓詞 (Palau Pledge)、海洋友善防曬乳規定、入境須知、裝備租借。帛琉自助旅行必讀指南！",
+    "guide_keywords": "帛琉攻略,帛琉自助,帛琉簽證,帛琉入境,PPEF,帛琉誓詞,海洋友善防曬,帛琉裝備租借,浮潛裝備,帛琉準備,帛琉旅遊指南,台灣帛琉",
+    "booking_desc": "Palauan Tour 帛琉旅遊報名流程：Line 諮詢、客製化帛琉行程規劃、報價討論、合約簽訂。7 步驟輕鬆完成帛琉之旅報名，帛琉在地台灣導遊為您服務！",
+    "booking_keywords": "帛琉報名,帛琉預訂,帛琉旅遊,Line諮詢,客製化行程,帛琉旅遊報價,台灣,帛琉在地導遊,帛琉在地台灣導遊"
   },
   "home": {
     "hero_title": "永續旅行 × 海島探索",
@@ -24,7 +40,41 @@
     "honeymoon": "蜜月旅行",
     "honeymoon_desc": "專屬兩人的浪漫時光，享受私密與奢華的海島體驗。",
     "private_boat": "私人包船",
-    "private_boat_desc": "自由自在的海上移動城堡，客製化行程，隨心所欲。"
+    "private_boat_desc": "自由自在的海上移動城堡，客製化行程，隨心所欲。",
+    "mission_title": "我們的承諾",
+    "mission_text": "我懷著感恩的心，珍惜帛琉的海洋與土地。<br>我不傷害生物，也不拿取不屬於我的東西。<br>我善待島上居民，以尊重與敬仰守護文化。<br>我不留下垃圾與汙染，只留下笑容與回憶恩典。"
+  },
+  "aboutus": {
+    "subtitle": "我們是一群熱愛帛琉的探險家，致力於帶給您最真實、最感動的海洋體驗。",
+    "story_title": "品牌故事",
+    "story_p1": "Palauan Tour 成立於對這片海洋的熱愛。我們深信，旅行不只是走馬看花，更是一場與自然對話的靈魂之旅。",
+    "story_p2": "我們的團隊由深耕帛琉多年的專業導遊組成，堅持小班制、高品質的服務，讓每一位旅人都能在安全、舒適的環境下，探索帛琉的秘境。",
+    "values_title": "核心價值",
+    "value_1_title": "永續環保",
+    "value_1_desc": "堅持無痕海洋，守護這片蔚藍天堂。",
+    "value_2_title": "在地體驗",
+    "value_2_desc": "深入在地文化，體驗最道地的帛琉生活。",
+    "value_3_title": "專業安全",
+    "value_3_desc": "合法執照導遊，高規格安全標準。"
+  },
+  "aboutpalau": {
+    "title": "純淨天堂 帛琉 (Pristine Paradise Palau)",
+    "subtitle": "探索 Pristine Paradise Palau，這顆被上帝灑落在太平洋上的珍珠。",
+    "pledge_title": "帛琉誓詞 (Palau Pledge)",
+    "pledge_intro": "帛琉是世界上第一個將環境保護誓詞納入入境法律的國家。每一位遊客在入境時，都必須簽署這份誓詞，承諾守護這裡的自然環境。",
+    "pledge_content": "「帛琉之兒女，我身為貴客，<br>在您美麗而獨特的島嶼家園，我立誓會維護並保護您美麗而獨特的島嶼家園。<br>我發誓會輕手輕腳、行事仁慈、小心探索。<br>不該拿的東西，我不拿；<br>不該傷害的，我不傷害；<br>留下的唯一印記，是會被沖刷掉的腳印。」",
+    "about_title": "認識帛琉 (About Palau)",
+    "geo_title": "地理位置",
+    "geo_desc": "位於西太平洋，由 340 多個火山島和珊瑚島組成，分為 16 個州。",
+    "heritage_title": "世界遺產",
+    "heritage_desc": "洛克群島 (Rock Islands) 南部潟湖於 2012 年被列為 UNESCO 世界自然與文化雙重遺產。",
+    "culture_title": "傳統文化",
+    "culture_desc": "帛琉擁有豐富的母系社會文化。傳統男人會館「Bai」是部落議事的中心，屋頂上的彩繪訴說著古老的傳說。",
+    "climate_title": "氣候",
+    "climate_desc": "熱帶海洋性氣候，年均溫 28~32°C。四季如夏，偶有陣雨，雨後常現彩虹，故有「彩虹故鄉」美譽。",
+    "wonders_title": "七大奇蹟",
+    "wonders_desc": "被 CEDAM International 評選為「世界七大水下奇蹟」之首。",
+    "attractions_title": "必訪景點 (Must Visit)"
   },
   "tours": {
     "combos_title": "住宿 & 旅遊套裝",
@@ -40,18 +90,94 @@
     "photo_desc": "專業攝影師隨行，為您記錄下每一個精彩瞬間，留下最美的回憶。",
     "photo_full_desc": "難得來到帛琉，怎能不留下美美的照片？我們的專業攝影團隊將隨行拍攝，無論是水下英姿還是陸上美照，都為您完美捕捉。提供空拍機視角，讓您的回憶更加立體震撼。"
   },
-  "meta": {
-    "home_desc": "Palauan Tour 帛琉在地台灣導遊，提供帛琉旅遊、帛琉行程規劃、帛琉套裝行程、帛琉一日遊、帛琉自助攻略。專業浮潛、潛水、水肺、自潛、freediving、SUP 體驗，探索上帝的水族箱。團體旅遊、蜜月旅行、樂齡旅遊全方位服務。",
-    "home_keywords": "台灣,帛琉,帛琉在地導遊,帛琉在地台灣導遊,帛琉旅遊,帛琉行程,帛琉自助,帛琉一日遊,帛琉套裝行程,Palauan Taiwan,Palau,浮潛,潛水,水肺,自潛,freediving,SUP,上帝的水族箱,樂齡旅遊,水母湖,牛奶湖,大斷層,海島旅遊,永續旅行,蜜月旅行,團體旅遊,私人包船",
-    "about_us_desc": "Palauan Tour 帛琉在地台灣導遊品牌，致力於永續帛琉旅遊。專業華語導遊團隊提供深度帛琉海洋探索體驗，堅持生態保護理念，為台灣旅客打造最優質的帛琉行程服務。",
-    "about_us_keywords": "Palauan Tour,台灣,帛琉在地導遊,帛琉在地台灣導遊,品牌故事,永續旅遊,生態旅遊,專業導遊,帛琉旅遊專家,華語導遊",
-    "about_palau_desc": "認識帛琉這顆太平洋上的珍珠。完整帛琉旅遊攻略：地理位置、氣候、簽證、必訪景點。探索水母湖、牛奶湖、大斷層、長沙灘、德國水道、鯊魚城等熱門景點，規劃您的帛琉自助行程。",
-    "about_palau_keywords": "帛琉,Palau,帛琉旅遊,水母湖,牛奶湖,大斷層,長沙灘,德國水道,鯊魚城,帛琉景點,帛琉攻略,帛琉簽證,帛琉自助",
-    "tours_desc": "Palauan Tour 帛琉行程方案：帛琉套裝行程（住宿+旅遊）、帛琉一日遊精選、SUP 立槳體驗、專業水下攝影。提供浮潛、潛水、水肺、自潛 freediving 等多元水上活動。量身打造帛琉旅遊行程，適合樂齡旅遊、帛琉自助或跟團。",
-    "tours_keywords": "帛琉行程,帛琉套裝行程,帛琉一日遊,帛琉旅遊,帛琉自助,浮潛,潛水,水肺,自潛,freediving,SUP,立槳,水下攝影,帛琉出海,樂齡旅遊,上帝的水族箱",
-    "guide_desc": "帛琉旅遊完整攻略：簽證資訊、行李打包清單、入境規定、當地生活資訊、浮潛裝備租借價格。帛琉自助旅行必讀指南，台灣出發帛琉旅遊前準備事項全整理！",
-    "guide_keywords": "帛琉攻略,帛琉自助,帛琉簽證,帛琉入境,帛琉裝備租借,浮潛裝備,帛琉準備,帛琉旅遊指南,台灣帛琉",
-    "booking_desc": "Palauan Tour 帛琉旅遊報名流程：Line 諮詢、客製化帛琉行程規劃、報價討論、合約簽訂。7 步驟輕鬆完成帛琉之旅報名，帛琉在地台灣導遊為您服務！",
-    "booking_keywords": "帛琉報名,帛琉預訂,帛琉旅遊,Line諮詢,客製化行程,帛琉旅遊報價,台灣,帛琉在地導遊,帛琉在地台灣導遊"
-  }
+  "guide": {
+    "subtitle": "歡迎來到彩虹的故鄉！在開始探險之前，請先閱讀這份常見問題指南。",
+    "tabs": {
+      "preparation": "行前準備",
+      "entry": "入境須知",
+      "life": "當地生活",
+      "rental": "裝備租借"
+    },
+    "preparation": {
+      "title": "✈️ 行前準備與簽證",
+      "visa_title": "1. 簽證資訊",
+      "visa_content": "持有效期限 6 個月以上之中華民國護照正本，享 <strong>90 天免簽證</strong>待遇。",
+      "packing_title": "2. 必備物品清單",
+      "packing_list": {
+        "item1": "護照、現金（美金）、信用卡",
+        "item2": "夏季衣服、泳衣",
+        "item3": "個人藥品",
+        "item4": "玩水裝備 (面鏡、呼吸管、防水相機)",
+        "item5": "海洋友善防曬用品 (物理防曬、水母衣)"
+      },
+      "alert_title": "重要禁忌：保護海洋，從防曬做起",
+      "alert_content_1": "<strong>嚴禁化學性防曬乳</strong>：帛琉是全球第一個立法禁止對珊瑚礁有害防曬乳的國家。攜帶入境或販售都會被沒收，並處 US$1,000 罰鍰。",
+      "alert_content_2": "請務必使用標示為「Reef Safe」的防曬產品，或穿著長袖水母衣物理防曬。"
+    },
+    "entry": {
+      "title": "🛃 入境須知",
+      "ppef_title": "1. Pristine Paradise 環境稅 (PPEF)",
+      "ppef_content": "所有入境帛琉的旅客都必須繳納 <strong>US$100</strong> 的環境稅 (Pristine Paradise Environmental Fee)。",
+      "ppef_note": "通常此費用已包含在您的機票價格中，無需現場另外繳納。",
+      "pledge_title": "2. 帛琉誓詞 (Palau Pledge)",
+      "pledge_content": "入境時，移民官會在您的護照上蓋上「帛琉誓詞」章戳。您必須在章戳上簽名，承諾在旅遊期間遵守環境保護規範，才能獲准入境。",
+      "form_title": "3. 入境表格填寫",
+      "form_content": "出發前 72 小時內需線上填寫「報關單」及「入境卡」。",
+      "form_url_label": "網址：",
+      "customs_title": "4. 海關攜帶限制",
+      "customs_list": {
+        "alcohol": "<strong>酒類</strong>：1 公升裝僅限一人一瓶。",
+        "tobacco": "<strong>香菸</strong>：每位成年人（滿 21 歲）僅限攜帶 <strong>一包 19 支</strong>（需拆封）。",
+        "ecig": "<strong>電子菸</strong>：全面禁止攜帶入境，違者將面臨罰款或沒收。",
+        "cash": "<strong>現金</strong>：隨身攜帶請勿超過 US$10,000。"
+      }
+    },
+    "life": {
+      "title": "💰 當地生活實用資訊",
+      "money_title": "消費與現金",
+      "money_content": "建議攜帶現金 US$300~500。賣場可刷卡，但多數店家只接受現金。",
+      "network_title": "網路與電壓",
+      "network_content": "<strong>網路</strong>：海上無訊號。網卡五天無限流量吃到飽約 US$20。",
+      "voltage_content": "<strong>電壓</strong>：110V 雙孔，插座與台灣相通。",
+      "tips_title": "小費文化 (建議金額)",
+      "tips_list": {
+        "porter": "旅館行李員：每人每次 US$1",
+        "housekeeping": "床頭小費：每間每天 US$1",
+        "boatman": "船家：每次出海 US$2",
+        "guide_service": "領隊服務費：每天 US$5",
+        "guide": "導遊：每天 US$10"
+      }
+    },
+    "rental": {
+      "title": "🤿 裝備租借價目表",
+      "subtitle": "帶上自己習慣的裝備，剩下的交給 PALAUAN TOUR！",
+      "snorkeling_title": "1. 浮潛 & 自潛裝備 (Snorkeling & Free Diving)",
+      "scuba_title": "2. 水肺潛水裝備 (Scuba Diving)",
+      "table": {
+        "item": "項目",
+        "price": "租金 (每天)",
+        "compensation": "遺失/損毀賠償"
+      },
+      "items": {
+        "mask_snorkel": "面鏡 + 呼吸管",
+        "long_fins": "自潛長蛙",
+        "wetsuit": "防寒衣",
+        "life_jacket": "浮潛救生衣",
+        "windbreaker": "防寒外套",
+        "weight_belt": "自潛配重帶",
+        "weight": "1kg 鉛塊 (1pcs)",
+        "computer": "電腦錶",
+        "compass": "指北針",
+        "torch": "潛水手電筒",
+        "buoy": "自潛浮球",
+        "reef_hook": "流勾",
+        "bcd": "BCD (浮力補償裝置)",
+        "adapter": "轉接頭 DIN",
+        "regulator": "二極頭 (調節器)",
+        "fins": "蛙鞋",
+        "smb": "浮力棒 & SMB"
+      }
+    }
+  },
+  "booking": {}
 }

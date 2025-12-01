@@ -10,80 +10,88 @@
     </div>
 
     <el-tabs type="border-card" class="guide-tabs">
-      <el-tab-pane label="行前準備">
-        <h2>✈️ 行前準備與簽證</h2>
+      <el-tab-pane :label="$t('guide.tabs.preparation')">
+        <h2>{{ $t('guide.preparation.title') }}</h2>
         
-        <h3>1. 簽證資訊</h3>
-        <p>持有效期限 6 個月以上之中華民國護照正本，享 <strong>90 天免簽證</strong>待遇。</p>
+        <h3>{{ $t('guide.preparation.visa_title') }}</h3>
+        <p v-html="$t('guide.preparation.visa_content')"></p>
 
-        <h3>2. 必備物品清單</h3>
+        <h3>{{ $t('guide.preparation.packing_title') }}</h3>
         <el-checkbox-group v-model="packingList" disabled>
-          <el-checkbox label="護照、現金（美金）、信用卡" checked />
-          <el-checkbox label="夏季衣服、泳衣" checked />
-          <el-checkbox label="個人藥品" checked />
-          <el-checkbox label="玩水裝備 (面鏡、呼吸管、防水相機)" checked />
-          <el-checkbox label="物理防曬用品 (墨鏡、帽子、毛巾衣)" checked />
+          <el-checkbox :label="$t('guide.preparation.packing_list.item1')" checked />
+          <el-checkbox :label="$t('guide.preparation.packing_list.item2')" checked />
+          <el-checkbox :label="$t('guide.preparation.packing_list.item3')" checked />
+          <el-checkbox :label="$t('guide.preparation.packing_list.item4')" checked />
+          <el-checkbox :label="$t('guide.preparation.packing_list.item5')" checked />
         </el-checkbox-group>
 
-        <el-alert title="重要禁忌" type="error" :closable="false" show-icon style="margin-top: 20px;">
-          <p><strong>嚴禁化學性防曬乳</strong>：攜帶入境或販售都會被沒收，並處 US$1,000 罰鍰。</p>
-          <p><strong>行動電源</strong>：飛行中全程禁用，請隨身攜帶（不可託運）。</p>
+        <el-alert :title="$t('guide.preparation.alert_title')" type="error" :closable="false" show-icon style="margin-top: 20px;">
+          <p v-html="$t('guide.preparation.alert_content_1')"></p>
+          <p>{{ $t('guide.preparation.alert_content_2') }}</p>
         </el-alert>
       </el-tab-pane>
 
-      <el-tab-pane label="入境須知">
-        <h2>🛃 入境須知</h2>
+      <el-tab-pane :label="$t('guide.tabs.entry')">
+        <h2>{{ $t('guide.entry.title') }}</h2>
         
-        <h3>1. 入境表格填寫</h3>
-        <p>出發前 72 小時內需線上填寫「報關單」及「入境卡」。</p>
-        <p>網址：<a href="https://palautravel.pw/" target="_blank">https://palautravel.pw/</a></p>
+        <h3>{{ $t('guide.entry.ppef_title') }}</h3>
+        <p v-html="$t('guide.entry.ppef_content')"></p>
+        <p class="note">{{ $t('guide.entry.ppef_note') }}</p>
 
-        <h3>2. 海關攜帶限制</h3>
+        <h3>{{ $t('guide.entry.pledge_title') }}</h3>
+        <p>{{ $t('guide.entry.pledge_content') }}</p>
+
+        <h3>{{ $t('guide.entry.form_title') }}</h3>
+        <p>{{ $t('guide.entry.form_content') }}</p>
+        <p>{{ $t('guide.entry.form_url_label') }}<a href="https://palautravel.pw/" target="_blank">https://palautravel.pw/</a></p>
+
+        <h3>{{ $t('guide.entry.customs_title') }}</h3>
         <ul class="info-list">
-          <li><strong>酒類</strong>：1 公升裝僅限一人一瓶。</li>
-          <li><strong>香菸</strong>：每位成年人（滿 21 歲）僅限攜帶 <strong>一包 19 支</strong>（需拆封）。</li>
-          <li><strong>現金</strong>：隨身攜帶請勿超過 US$10,000。</li>
+          <li v-html="$t('guide.entry.customs_list.alcohol')"></li>
+          <li v-html="$t('guide.entry.customs_list.tobacco')"></li>
+          <li v-html="$t('guide.entry.customs_list.ecig')"></li>
+          <li v-html="$t('guide.entry.customs_list.cash')"></li>
         </ul>
       </el-tab-pane>
 
-      <el-tab-pane label="當地生活">
-        <h2>💰 當地生活實用資訊</h2>
+      <el-tab-pane :label="$t('guide.tabs.life')">
+        <h2>{{ $t('guide.life.title') }}</h2>
         
-        <h3>消費與現金</h3>
-        <p>建議攜帶現金 US$300~500。賣場可刷卡，但多數店家只接受現金。</p>
+        <h3>{{ $t('guide.life.money_title') }}</h3>
+        <p>{{ $t('guide.life.money_content') }}</p>
 
-        <h3>網路與電壓</h3>
-        <p><strong>網路</strong>：海上無訊號。網卡五天無限流量吃到飽約 US$20。</p>
-        <p><strong>電壓</strong>：110V 雙孔，插座與台灣相通。</p>
+        <h3>{{ $t('guide.life.network_title') }}</h3>
+        <p v-html="$t('guide.life.network_content')"></p>
+        <p v-html="$t('guide.life.voltage_content')"></p>
 
-        <h3>小費文化 (建議金額)</h3>
+        <h3>{{ $t('guide.life.tips_title') }}</h3>
         <ul class="info-list">
-          <li>旅館行李員：每人每次 US$1</li>
-          <li>床頭小費：每間每天 US$1</li>
-          <li>船家：每次出海 US$2</li>
-          <li>領隊服務費：每天 US$5</li>
-          <li>導遊：每天 US$10</li>
+          <li>{{ $t('guide.life.tips_list.porter') }}</li>
+          <li>{{ $t('guide.life.tips_list.housekeeping') }}</li>
+          <li>{{ $t('guide.life.tips_list.boatman') }}</li>
+          <li>{{ $t('guide.life.tips_list.guide_service') }}</li>
+          <li>{{ $t('guide.life.tips_list.guide') }}</li>
         </ul>
       </el-tab-pane>
 
-      <el-tab-pane label="裝備租借">
-        <h2>🤿 裝備租借價目表</h2>
-        <p style="margin-bottom: 20px;">帶上自己習慣的裝備，剩下的交給 PALAUAN TOUR！</p>
+      <el-tab-pane :label="$t('guide.tabs.rental')">
+        <h2>{{ $t('guide.rental.title') }}</h2>
+        <p style="margin-bottom: 20px;">{{ $t('guide.rental.subtitle') }}</p>
 
-        <h3>1. 浮潛 & 自潛裝備 (Snorkeling & Free Diving)</h3>
+        <h3>{{ $t('guide.rental.snorkeling_title') }}</h3>
         <!-- @vue-ignore -->
         <el-table :data="snorkelingData" style="width: 100%" stripe border>
-          <el-table-column prop="item" label="項目" />
-          <el-table-column prop="price" label="租金 (每天)" width="150" />
-          <el-table-column prop="compensation" label="遺失/損毀賠償" width="180" />
+          <el-table-column prop="item" :label="$t('guide.rental.table.item')" />
+          <el-table-column prop="price" :label="$t('guide.rental.table.price')" width="150" />
+          <el-table-column prop="compensation" :label="$t('guide.rental.table.compensation')" width="180" />
         </el-table>
 
-        <h3 style="margin-top: 40px;">2. 水肺潛水裝備 (Scuba Diving)</h3>
+        <h3 style="margin-top: 40px;">{{ $t('guide.rental.scuba_title') }}</h3>
         <!-- @vue-ignore -->
         <el-table :data="scubaData" style="width: 100%" stripe border>
-          <el-table-column prop="item" label="項目" />
-          <el-table-column prop="price" label="租金 (每天)" width="150" />
-          <el-table-column prop="compensation" label="遺失/損毀賠償" width="180" />
+          <el-table-column prop="item" :label="$t('guide.rental.table.item')" />
+          <el-table-column prop="price" :label="$t('guide.rental.table.price')" width="150" />
+          <el-table-column prop="compensation" :label="$t('guide.rental.table.compensation')" width="180" />
         </el-table>
       </el-tab-pane>
     </el-tabs>
@@ -180,35 +188,35 @@ interface RentalItem {
   compensation: string
 }
 
-const snorkelingData: RentalItem[] = [
-  { item: '面鏡 + 呼吸管', price: '$6', compensation: '$ 30' },
-  { item: '自潛長蛙', price: '$10', compensation: '$ 100' },
-  { item: '防寒衣', price: '$10', compensation: '$ 100' },
-  { item: '浮潛救生衣', price: '$15', compensation: '$ 350' },
-  { item: '防寒外套', price: '$10', compensation: '$ 180' },
-  { item: '自潛配重帶', price: '$5', compensation: '$ 40' },
-  { item: '1kg 鉛塊 (1pcs)', price: '$2', compensation: '$ 10' },
-  { item: '電腦錶', price: '$15', compensation: '$ 350' },
-  { item: '指北針', price: '$6', compensation: '$ 100' },
-  { item: '潛水手電筒', price: '$5', compensation: '$ 200' },
-  { item: '自潛浮球', price: '$20', compensation: '$ 150 (底鉛&繩子另計)' },
-  { item: '流勾', price: '$5', compensation: '$ 20' },
-]
+const snorkelingData = computed<RentalItem[]>(() => [
+  { item: t('guide.rental.items.mask_snorkel'), price: '$6', compensation: '$ 30' },
+  { item: t('guide.rental.items.long_fins'), price: '$10', compensation: '$ 100' },
+  { item: t('guide.rental.items.wetsuit'), price: '$10', compensation: '$ 100' },
+  { item: t('guide.rental.items.life_jacket'), price: '$15', compensation: '$ 350' },
+  { item: t('guide.rental.items.windbreaker'), price: '$10', compensation: '$ 180' },
+  { item: t('guide.rental.items.weight_belt'), price: '$5', compensation: '$ 40' },
+  { item: t('guide.rental.items.weight'), price: '$2', compensation: '$ 10' },
+  { item: t('guide.rental.items.computer'), price: '$15', compensation: '$ 350' },
+  { item: t('guide.rental.items.compass'), price: '$6', compensation: '$ 100' },
+  { item: t('guide.rental.items.torch'), price: '$5', compensation: '$ 200' },
+  { item: t('guide.rental.items.buoy'), price: '$20', compensation: '$ 150 (底鉛&繩子另計)' },
+  { item: t('guide.rental.items.reef_hook'), price: '$5', compensation: '$ 20' },
+])
 
-const scubaData: RentalItem[] = [
-  { item: 'BCD (浮力補償裝置)', price: '$15', compensation: '$ 500' },
-  { item: '轉接頭 DIN', price: '$8', compensation: '$ 80' },
-  { item: '二極頭 (調節器)', price: '$15', compensation: '$ 750' },
-  { item: '防寒衣', price: '$10', compensation: '$ 100' },
-  { item: '防寒外套', price: '$10', compensation: '$ 180' },
-  { item: '電腦錶', price: '$15', compensation: '$ 350' },
-  { item: '潛水手電筒', price: '$5', compensation: '$ 200' },
-  { item: '指北針', price: '$6', compensation: '$ 100' },
-  { item: '蛙鞋', price: '$6', compensation: '$ 80' },
-  { item: '1kg 鉛塊 (1pcs)', price: '$2', compensation: '$ 10' },
-  { item: '浮力棒 & SMB', price: '$15', compensation: '$ 50' },
-  { item: '流勾', price: '$5', compensation: '$ 20' },
-]
+const scubaData = computed<RentalItem[]>(() => [
+  { item: t('guide.rental.items.bcd'), price: '$15', compensation: '$ 500' },
+  { item: t('guide.rental.items.adapter'), price: '$8', compensation: '$ 80' },
+  { item: t('guide.rental.items.regulator'), price: '$15', compensation: '$ 750' },
+  { item: t('guide.rental.items.wetsuit'), price: '$10', compensation: '$ 100' },
+  { item: t('guide.rental.items.windbreaker'), price: '$10', compensation: '$ 180' },
+  { item: t('guide.rental.items.computer'), price: '$15', compensation: '$ 350' },
+  { item: t('guide.rental.items.torch'), price: '$5', compensation: '$ 200' },
+  { item: t('guide.rental.items.compass'), price: '$6', compensation: '$ 100' },
+  { item: t('guide.rental.items.fins'), price: '$6', compensation: '$ 80' },
+  { item: t('guide.rental.items.weight'), price: '$2', compensation: '$ 10' },
+  { item: t('guide.rental.items.smb'), price: '$15', compensation: '$ 50' },
+  { item: t('guide.rental.items.reef_hook'), price: '$5', compensation: '$ 20' },
+])
 </script>
 
 <style scoped>
@@ -251,6 +259,12 @@ h2 {
 h3 {
   color: var(--el-color-secondary);
   margin-top: 30px;
+  margin-bottom: 15px;
+}
+.note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: -10px;
   margin-bottom: 15px;
 }
 </style>

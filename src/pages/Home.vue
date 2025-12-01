@@ -9,6 +9,14 @@
       </div>
     </section>
 
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <div class="container">
+        <h2>{{ $t('home.mission_title') }}</h2>
+        <blockquote class="mission-text" v-html="$t('home.mission_text')"></blockquote>
+      </div>
+    </section>
+
     <!-- Trust Bar -->
     <section class="trust-bar">
       <div class="container">
@@ -137,6 +145,24 @@ useHead({
   font-size: 1.5rem;
   margin-bottom: 30px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.mission-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.mission-text {
+  font-size: 1.25rem;
+  line-height: 2;
+  color: var(--el-color-primary);
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 4px solid var(--color-accent);
+  background: white;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 .trust-bar {
   padding: 60px 0;

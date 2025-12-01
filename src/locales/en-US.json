@@ -4,7 +4,7 @@
         "home": "Home",
         "about": "About",
         "about_us": "About Us",
-        "about_palau": "About Palau",
+        "about_palau": "Palau",
         "tours": "Adventure Modes",
         "guide": "Guide & Rental",
         "booking": "Book Now",
@@ -12,6 +12,22 @@
         "line_consult": "Line Consultation",
         "instagram": "Instagram",
         "view_on_map": "View on Google Maps"
+    },
+    "meta": {
+        "home_desc": "Palauan Tour - Taiwan to Palau travel specialist. Professional local guides offering Palau tours, packages, day trips. Experience snorkeling, scuba diving, freediving, SUP in God's Aquarium. Perfect for senior travel, honeymoon, and group tours.",
+        "home_keywords": "Palauan Taiwan,Taiwan Palau,Palau tour,Palau travel,Palau package,Palau day trip,snorkeling,diving,scuba,freediving,SUP,God's Aquarium,senior travel,Jellyfish Lake,Milky Way,Big Drop Off,island tour,sustainable travel,honeymoon,group tour,private charter,local guide",
+        "about_us_desc": "Palauan Tour is a Taiwan-based Palau local guide brand dedicated to sustainable tourism. Professional Chinese-speaking guides provide deep ocean exploration experiences while protecting Palau's natural environment for Taiwan travelers.",
+        "about_us_keywords": "Palauan Tour,Palauan Taiwan,Taiwan,local guide,brand story,sustainable tourism,eco-tourism,professional guides,Palau travel expert,Chinese guide",
+        "about_palau_desc": "Discover Pristine Paradise Palau. Complete guide including the 16 states, traditional Bai culture, geography, climate, Pristine Paradise Environmental Fee (PPEF), and must-visit attractions. Explore the 7 Underwater Wonders.",
+        "about_palau_keywords": "Pristine Paradise Palau,Palau,Palau travel,Taiwan to Palau,Jellyfish Lake,Milky Way,Big Drop Off,Long Beach,German Channel,Shark City,Palau attractions,Palau guide,Palau visa,PPEF,Palau Pledge",
+        "pledge_intro": "Palau is the first nation on earth to change its immigration laws for the cause of environmental protection. Upon entry, visitors need to sign a passport pledge to act in an ecologically responsible way on the island.",
+        "pledge_content": "\"Children of Palau, I take this pledge,<br>as your guest, to preserve and protect your beautiful and unique island home.<br>I vow to tread lightly, act kindly and explore mindfully.<br>I shall not take what is not given.<br>I shall not harm what does not harm me.<br>The only footprints I shall leave are those that will wash away.\"",
+        "tours_desc": "Palauan Tour adventure modes: accommodation packages, Palau day tours, SUP expeditions, professional photography. Offering snorkeling, scuba diving, freediving in God's Aquarium. Customized itineraries for all ages including senior travel from Taiwan.",
+        "tours_keywords": "Palau itinerary,Palau packages,Palau day tour,day trip,snorkeling,diving,scuba,freediving,SUP,stand up paddle,underwater photography,God's Aquarium,senior travel,Taiwan Palau",
+        "guide_desc": "Complete Palau travel guide: Pristine Paradise Environmental Fee (PPEF), Palau Pledge, reef-safe sunscreen regulations, entry requirements, and equipment rental. Must-read before departure!",
+        "guide_keywords": "Palau guide,Taiwan to Palau,Palau visa,Palau entry,PPEF,Palau Pledge,reef-safe sunscreen,equipment rental,snorkeling gear,Palau preparation,Palau travel guide",
+        "booking_desc": "Palauan Tour booking process from Taiwan: Line consultation, customized itinerary, quotation, contract signing. 7 easy steps to start your Palau adventure with Taiwan's best local guides!",
+        "booking_keywords": "Palau booking,Palau reservation,Taiwan,Palauan Taiwan,Line consultation,customized itinerary,Palau tour quote,local guide"
     },
     "home": {
         "hero_title": "Sustainable Travel × Island Exploration",
@@ -24,7 +40,41 @@
         "honeymoon": "Honeymoon",
         "honeymoon_desc": "Romantic time exclusively for two, enjoying private and luxurious island experiences.",
         "private_boat": "Private Boat",
-        "private_boat_desc": "A free-moving castle on the sea, customized itinerary, as you wish."
+        "private_boat_desc": "A free-moving castle on the sea, customized itinerary, as you wish.",
+        "mission_title": "Our Commitment",
+        "mission_text": "With gratitude, I cherish Palau's ocean and land.<br>I do not harm living things, nor do I take what does not belong to me.<br>I treat the island residents with kindness, protecting their culture with respect and reverence.<br>I leave no trash or pollution, only smiles and memories of grace."
+    },
+    "aboutus": {
+        "subtitle": "We are a group of explorers who love Palau, dedicated to bringing you the most authentic and touching ocean experience.",
+        "story_title": "Brand Story",
+        "story_p1": "Palauan Tour was founded on the love for this ocean. We believe that travel is not just a quick glance, but a soul journey in dialogue with nature.",
+        "story_p2": "Our team consists of professional guides who have been deeply cultivating Palau for many years, insisting on small class sizes and high-quality services, allowing every traveler to explore the secrets of Palau in a safe and comfortable environment.",
+        "values_title": "Core Values",
+        "value_1_title": "Sustainability",
+        "value_1_desc": "Insist on leave-no-trace ocean, guarding this blue paradise.",
+        "value_2_title": "Local Experience",
+        "value_2_desc": "Deep into local culture, experience the most authentic Palauan life.",
+        "value_3_title": "Professional Safety",
+        "value_3_desc": "Licensed guides, high safety standards."
+    },
+    "aboutpalau": {
+        "title": "Pristine Paradise Palau",
+        "subtitle": "Explore Pristine Paradise Palau, the pearl scattered by God in the Pacific Ocean.",
+        "pledge_title": "Palau Pledge",
+        "pledge_intro": "Palau is the first nation on earth to change its immigration laws for the cause of environmental protection. Upon entry, visitors need to sign a passport pledge to act in an ecologically responsible way on the island.",
+        "pledge_content": "\"Children of Palau, I take this pledge,<br>as your guest, to preserve and protect your beautiful and unique island home.<br>I vow to tread lightly, act kindly and explore mindfully.<br>I shall not take what is not given.<br>I shall not harm what does not harm me.<br>The only footprints I shall leave are those that will wash away.\"",
+        "about_title": "About Palau",
+        "geo_title": "Geography",
+        "geo_desc": "Located in the Western Pacific, composed of more than 340 volcanic and coral islands, divided into 16 states.",
+        "heritage_title": "World Heritage",
+        "heritage_desc": "The Rock Islands Southern Lagoon was listed as a UNESCO mixed World Heritage site (natural and cultural) in 2012.",
+        "culture_title": "Traditional Culture",
+        "culture_desc": "Palau has a rich matrilineal society culture. The traditional men's meeting house 'Bai' is the center of tribal council, and the paintings on the roof tell ancient legends.",
+        "climate_title": "Climate",
+        "climate_desc": "Tropical oceanic climate, average annual temperature 28~32°C. Summer all year round, occasional showers, rainbows often appear after rain, hence the reputation of 'Rainbow Hometown'.",
+        "wonders_title": "7 Underwater Wonders",
+        "wonders_desc": "Named No. 1 of the 'Seven Underwater Wonders of the World' by CEDAM International.",
+        "attractions_title": "Must Visit"
     },
     "tours": {
         "combos_title": "Accommodation & Tour Combos",
@@ -40,18 +90,94 @@
         "photo_desc": "Professional photographers accompany you to record every wonderful moment and leave the most beautiful memories.",
         "photo_full_desc": "Rarely come to Palau, how can you not leave beautiful photos? Our professional photography team will accompany you to shoot, whether it is underwater heroic posture or land beauty, capturing it perfectly for you. Drone perspective is provided to make your memories more three-dimensional and shocking."
     },
-    "meta": {
-        "home_desc": "Palauan Tour - Taiwan to Palau travel specialist. Professional local guides offering Palau tours, packages, day trips. Experience snorkeling, scuba diving, freediving, SUP in God's Aquarium. Perfect for senior travel, honeymoon, and group tours.",
-        "home_keywords": "Palauan Taiwan,Taiwan Palau,Palau tour,Palau travel,Palau package,Palau day trip,snorkeling,diving,scuba,freediving,SUP,God's Aquarium,senior travel,Jellyfish Lake,Milky Way,Big Drop Off,island tour,sustainable travel,honeymoon,group tour,private charter,local guide",
-        "about_us_desc": "Palauan Tour is a Taiwan-based Palau local guide brand dedicated to sustainable tourism. Professional Chinese-speaking guides provide deep ocean exploration experiences while protecting Palau's natural environment for Taiwan travelers.",
-        "about_us_keywords": "Palauan Tour,Palauan Taiwan,Taiwan,local guide,brand story,sustainable tourism,eco-tourism,professional guides,Palau travel expert,Chinese guide",
-        "about_palau_desc": "Discover Palau, the pearl of the Pacific. Complete guide for Taiwan travelers including geography, climate, visa info, and must-visit attractions: Jellyfish Lake, Milky Way, Big Drop Off, Long Beach, German Channel, Shark City.",
-        "about_palau_keywords": "Palau,Palau travel,Taiwan to Palau,Jellyfish Lake,Milky Way,Big Drop Off,Long Beach,German Channel,Shark City,Palau attractions,Palau guide,Palau visa",
-        "tours_desc": "Palauan Tour adventure modes: accommodation packages, Palau day tours, SUP expeditions, professional photography. Offering snorkeling, scuba diving, freediving in God's Aquarium. Customized itineraries for all ages including senior travel from Taiwan.",
-        "tours_keywords": "Palau itinerary,Palau packages,Palau day tour,day trip,snorkeling,diving,scuba,freediving,SUP,stand up paddle,underwater photography,God's Aquarium,senior travel,Taiwan Palau",
-        "guide_desc": "Complete Palau travel guide for Taiwan travelers: visa information, packing list, entry regulations, local info, and snorkeling equipment rental prices. Must-read before departure from Taiwan!",
-        "guide_keywords": "Palau guide,Taiwan to Palau,Palau visa,Palau entry,equipment rental,snorkeling gear,Palau preparation,Palau travel guide",
-        "booking_desc": "Palauan Tour booking process from Taiwan: Line consultation, customized itinerary, quotation, contract signing. 7 easy steps to start your Palau adventure with Taiwan's best local guides!",
-        "booking_keywords": "Palau booking,Palau reservation,Taiwan,Palauan Taiwan,Line consultation,customized itinerary,Palau tour quote,local guide"
-    }
+    "guide": {
+        "subtitle": "Welcome to the Rainbow's Hometown! Please read this FAQ guide before starting your adventure.",
+        "tabs": {
+            "preparation": "Preparation",
+            "entry": "Entry Info",
+            "life": "Local Life",
+            "rental": "Rental"
+        },
+        "preparation": {
+            "title": "✈️ Preparation & Visa",
+            "visa_title": "1. Visa Information",
+            "visa_content": "Holders of ROC passports valid for more than 6 months enjoy <strong>90 days visa-free</strong> entry.",
+            "packing_title": "2. Packing List",
+            "packing_list": {
+                "item1": "Passport, Cash (USD), Credit Card",
+                "item2": "Summer clothes, Swimwear",
+                "item3": "Personal medicine",
+                "item4": "Water gear (Mask, Snorkel, Waterproof Camera)",
+                "item5": "Ocean-friendly sunscreen (Physical sunscreen, Rash guard)"
+            },
+            "alert_title": "Important: Protect the Ocean, Start with Sunscreen",
+            "alert_content_1": "<strong>Chemical sunscreen prohibited</strong>: Palau is the first country to ban reef-toxic sunscreen. Import or sale will result in confiscation and a US$1,000 fine.",
+            "alert_content_2": "Please use 'Reef Safe' sunscreen or wear long-sleeved rash guards."
+        },
+        "entry": {
+            "title": "🛃 Entry Requirements",
+            "ppef_title": "1. Pristine Paradise Environmental Fee (PPEF)",
+            "ppef_content": "All visitors to Palau must pay a <strong>US$100</strong> Pristine Paradise Environmental Fee.",
+            "ppef_note": "Usually included in your airline ticket, no need to pay on arrival.",
+            "pledge_title": "2. Palau Pledge",
+            "pledge_content": "Upon entry, a 'Palau Pledge' stamp will be placed in your passport. You must sign it to pledge to protect the environment during your stay.",
+            "form_title": "3. Entry Forms",
+            "form_content": "Fill out the 'Customs Declaration' and 'Arrival Card' online within 72 hours before departure.",
+            "form_url_label": "URL: ",
+            "customs_title": "4. Customs Limits",
+            "customs_list": {
+                "alcohol": "<strong>Alcohol</strong>: 1 bottle (1 liter) per person.",
+                "tobacco": "<strong>Tobacco</strong>: 1 pack (19 cigarettes, opened) per adult (21+).",
+                "ecig": "<strong>E-cigarettes</strong>: Strictly prohibited. Fines or confiscation apply.",
+                "cash": "<strong>Cash</strong>: Do not carry more than US$10,000."
+            }
+        },
+        "life": {
+            "title": "💰 Local Life Info",
+            "money_title": "Consumption & Cash",
+            "money_content": "Suggested cash: US$300~500. Credit cards accepted in malls, but most shops prefer cash.",
+            "network_title": "Internet & Voltage",
+            "network_content": "<strong>Internet</strong>: No signal at sea. SIM card approx US$20 for 5 days unlimited data.",
+            "voltage_content": "<strong>Voltage</strong>: 110V, same plugs as Taiwan/USA.",
+            "tips_title": "Tipping Culture (Suggested)",
+            "tips_list": {
+                "porter": "Porter: US$1 per person per time",
+                "housekeeping": "Housekeeping: US$1 per room per day",
+                "boatman": "Boatman: US$2 per trip",
+                "guide_service": "Tour Leader: US$5 per day",
+                "guide": "Guide: US$10 per day"
+            }
+        },
+        "rental": {
+            "title": "🤿 Equipment Rental Price List",
+            "subtitle": "Bring your own gear, or rent from PALAUAN TOUR!",
+            "snorkeling_title": "1. Snorkeling & Free Diving",
+            "scuba_title": "2. Scuba Diving",
+            "table": {
+                "item": "Item",
+                "price": "Rent (Daily)",
+                "compensation": "Loss/Damage"
+            },
+            "items": {
+                "mask_snorkel": "Mask + Snorkel",
+                "long_fins": "Long Fins",
+                "wetsuit": "Wetsuit",
+                "life_jacket": "Life Jacket",
+                "windbreaker": "Windbreaker",
+                "weight_belt": "Weight Belt",
+                "weight": "1kg Weight",
+                "computer": "Dive Computer",
+                "compass": "Compass",
+                "torch": "Dive Torch",
+                "buoy": "Buoy",
+                "reef_hook": "Reef Hook",
+                "bcd": "BCD",
+                "adapter": "DIN Adapter",
+                "regulator": "Regulator",
+                "fins": "Fins",
+                "smb": "SMB"
+            }
+        }
+    },
+    "booking": {}
 }
