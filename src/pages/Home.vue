@@ -101,7 +101,15 @@ useHead({
           addressLocality: 'Koror',
           addressCountry: 'PW'
         },
-        priceRange: '$$'
+        priceRange: '$$',
+        sameAs: [
+          'https://www.instagram.com/palauantour/',
+          'https://line.me/ti/p/@palauantour'
+        ],
+        areaServed: {
+          '@type': 'Country',
+          name: 'Palau'
+        }
       })
     }
   ]

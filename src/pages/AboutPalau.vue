@@ -37,6 +37,23 @@ useHead({
       content: computed(() => t('meta.about_palau_desc')),
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Place',
+        name: 'Palau',
+        description: 'Pristine Paradise Palau, an archipelago of over 500 islands, part of the Micronesia region in the western Pacific Ocean.',
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: '7.5149',
+          longitude: '134.5825'
+        },
+        hasMap: 'https://goo.gl/maps/Palau'
+      })
+    }
+  ]
 })
 </script>
 

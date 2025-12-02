@@ -82,6 +82,35 @@ useHead({
       content: computed(() => t('meta.tours_desc')),
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Group Tour',
+            description: 'For explorers who love excitement, making new friends, and sharing happy moments.'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Honeymoon',
+            description: 'Romantic time exclusively for two, enjoying private and luxurious island experiences.'
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Private Boat',
+            description: 'A free-moving castle on the sea, customized itinerary, as you wish.'
+          }
+        ]
+      })
+    }
+  ]
 })
 </script>
 
